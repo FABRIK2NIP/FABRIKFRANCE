@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 283.5 141.7" style="enable-background:new 0 0 283.5 141.7;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:#000000;stroke-miterlimit:10;
+	stroke-dasharray: 1000;
+	stroke-dashoffset:0;
+	-webkit-animation: dash 5s  forwards;
+	-o-animation: dash 5s linear forwards;
+	-moz-animation: dash 5s linear forwards;
+	animation: dash 5s linear forwards;
+	}
+	
+	
+	#calque_1:hover .st0 {
+	fill:#555555;
+	transition: 0,8s;
+	
+	}
+	
+	#calque_1:clickit .st0 {
+	fill:#1b75bb;
+	stroke: #1b75bb;
+	
+	}
+	
+	@-webkit-keyframes dash{
+		from {
+		stroke-dashoffset: 1000;
+		
+		}
+		
+		to {
+		stroke-dashoffset:0;
+		
+		}
+	
+	}
+	
+	.st1{font-family:'MyriadPro-Regular'; font-size:24;}
+	
+	#calque_1:hover .st1 {
+	color: #FFFFFFF
+	}
+	
+</style>
+
+<path class="st0" d="M252.5,90h-221c-3.3,0-6-2.7-6-6V38.8c0-3.3,2.7-6,6-6h221c3.3,0,6,2.7,6,6V84C258.5,87.3,255.8,90,252.5,90z"
+	/>
+<text transform="matrix(1 0 0 1 84.7834 69.4021)" class="st1">U P L O A D</text>
+</svg>

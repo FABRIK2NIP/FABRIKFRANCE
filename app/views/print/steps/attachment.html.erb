@@ -1,0 +1,94 @@
+	<body style="min-width: 700px;">
+
+			
+		 <%= form_for @print, method: :put, :html => { :multipart => true, :id =>'form1' },  url: wizard_path do |f| %>
+ 	<div class="interface">
+ 			
+			
+		
+ 			
+ 		<h1>FABRIK</h1>
+ 		<h2>UPLOADER</h2>
+  			
+  		<div class="encadrement" style="text-align: center;">
+			
+			<object >
+			<div style="margin: auto; width: 35%; margin-top: 70px; height:220px; min-width:300px;min-height: 220px;">
+			<%= image_tag("logocloud.svg", :alt => "images") %>
+			</div>
+			
+		</object>
+		<div style="clear:both;position:relative; text-align:center; border:none;">
+			
+			
+			
+			<form name="form1" id="form1">
+		<div id="attachment" style="margin-top: 35px;">
+			<div class="wrapper">
+				<input type="file" id="attachment" name="print[attachment]" style="height:58px; width:180px;"></input>
+			</div>
+			<div>
+			<button>UPLOAD</button>
+		</div>
+	
+		</div>
+			<p style="margin-top: 15px; max-width: 60%; min-width: 150px;">fichiers en .<b>stl</b>, .<b>obj</b> et .<b>zip</b> acceptés.</p>
+			
+			<p style="margin-top: 40px; max-width: 60%; min-width: 150px;">En téléchargeant vos fichiers dans FABRIK, vous acceptez nos <a href="http://www.fabrik.company" >conditions générales d’utilisations</a>.</p>
+			
+			</div>
+		</div>
+		</div>
+		</form>
+		<% end %>
+		
+		
+		
+		
+		<H2>Upload Your STL file here.</H2>
+		<table border="1">
+		<form action="live_preview.php" method="post"
+		enctype="multipart/form-data" border="1px">
+		<tr><td>
+		<label for="file">Filename:</label>
+		<input type="file" name="file" id="file"/>
+		</td></tr>
+		<tr><td>
+		<input type="submit" name="submit" value="Submit" />
+		</td></tr>
+		</form>
+		</table><BR>
+		Note: .stl files only.
+		
+		<script>
+		$(function(){
+		    $("#attachment").change(function(){
+		        $("#form1").submit();
+		    });
+		});
+		
+		</script>
+		
+		
+		
+		
+		</body>
+		</html>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</body>
+	
+
+
+
+

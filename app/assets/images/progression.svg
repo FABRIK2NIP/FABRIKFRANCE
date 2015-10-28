@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 283.5 283.5" style="enable-background:new 0 0 283.5 283.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{stroke:#808285;stroke-width:0.75;stroke-miterlimit:10;}
+	.st1{fill:#FFF200;}
+	.st2{fill:#ED1C24;}
+	.st3{fill:none;stroke:#6D6E71;stroke-width:0.1;stroke-miterlimit:10;
+	stroke-dasharray: 500;
+	stroke-dashoffset: 0;
+	-webkit-animation: dash 1s forwards;
+	-o-animation: dash 1s forwards;
+	-moz-animation: dash 1s forwards;
+	animation: dash 1s forwards;
+	}
+	.st5{fill:none;stroke:#6D6E71;stroke-width:0.1;stroke-miterlimit:10;
+	stroke-dasharray: 500;
+	stroke-dashoffset: 0;
+	-webkit-animation: dash 1s forwards;
+	-o-animation: dash 1s forwards;
+	-moz-animation: dash 1s forwards;
+	animation: dash 1s forwards;
+	}
+	.st6{fill:none;stroke:#6D6E71;stroke-width:0.1;stroke-miterlimit:10;
+	stroke-dasharray: 500;
+	stroke-dashoffset: 0;
+	-webkit-animation: dash 1s forwards;
+	-o-animation: dash 1s forwards;
+	-moz-animation: dash 1s forwards;
+	animation: dash 1s forwards;
+	}
+	.st7{fill:none;stroke:#6D6E71;stroke-width:0.1;stroke-miterlimit:10;
+	stroke-dasharray: 500;
+	stroke-dashoffset: 0;
+	-webkit-animation: dash 1s forwards;
+	-o-animation: dash 1s forwards;
+	-moz-animation: dash 1s forwards;
+	animation: dash 1s forwards;
+	}
+
+@-webkit-keyframes fadeIn1 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn1 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn1 {
+  -webkit-animation-name: fadeIn1;
+  animation-name: fadeIn1;
+  fill:#FFF200;
+}
+
+@-webkit-keyframes fadeIn2 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn2 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn2 {
+  -webkit-animation-name: fadeIn2;
+  animation-name: fadeIn2;
+  fill:#ED1C24;
+  begin: 10s;
+}
+
+
+
+	.st4{fill:none;stroke:url(#SVGID_1_);stroke-miterlimit:10;}
+	
+	.st4 {
+	stroke-dasharray: 500;
+	stroke-dashoffset: 0;
+	-webkit-animation: dash 12s forwards;
+	-o-animation: dash 12s forwards;
+	-moz-animation: dash 12s forwards;
+	animation: dash 12s forwards;
+	}
+	
+	@-webkit-keyframes dash {
+		from {
+		stroke-dashoffset: 500;
+		}
+		to {
+		stroke-dashoffset: 0;
+		}
+	
+	
+	}
+	
+</style>
+<circle class="fadeIn1" cx="30.2" cy="47.7" r="3"/>
+<circle begin="10s" class="fadeIn2" cx="256.1" cy="249.3" r="3.1"/>
+<line begin="1s" class="st3" x1="65.2" y1="53.3" x2="65.2" y2="252.4"/>
+<line begin="2s" class="st5" x1="111.5" y1="60.4" x2="111.5" y2="252.4"/>
+<line begin="3s" class="st6" x1="159.7" y1="84.8" x2="159.7" y2="252.4"/>
+<line begin="4s" class="st7" x1="206.9" y1="141.7" x2="206.9" y2="251.6"/>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="52.715" y1="23.9476" x2="267.4571" y2="238.6898">
+	<stop  offset="0" style="stop-color:#FFF200"/>
+	<stop  offset="0.2027" style="stop-color:#FFC40C" begin="0,1"/>
+	<stop  offset="0.4936" style="stop-color:#F6891F" begin="100"/>
+	<stop  offset="0.7328" style="stop-color:#F15B22" begin="200"/>
+	<stop  offset="0.9078" style="stop-color:#EE3324" begin="300"/>
+	<stop  offset="1" style="stop-color:#ED1C24"/>
+</linearGradient>
+<path class="st4" d="M29.4,47.7c8.3,1.7,27.4,4.7,33.6,5.6s13.5,1.6,21.3,2.4c7.8,0.8,28.3,4.3,40,8s18.8,5.7,26.7,12
+	c7.8,6.3,11,12.9,17.3,20.3c6.4,7.4,19.7,20.5,24.7,27s11.3,14.4,14,17.7c2.7,3.4,10.2,15.7,14,22.9s11.2,17.2,17.7,32.7
+	c6.5,15.5,10.4,27.6,12.3,35c2,7.4,6.7,20.3,4.7,17.7"/>
+</svg>

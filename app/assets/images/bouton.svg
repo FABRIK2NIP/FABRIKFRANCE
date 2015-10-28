@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+
+	 viewBox="0 0 147 50.5" enable-background="new 0 0 147 50.5" xml:space="preserve">
+	 
+<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M137,45.2H10.2c-2.3,0-4.3-1.9-4.3-4.3V9.1c0-2.3,1.9-4.3,4.3-4.3
+	H137c2.3,0,4.3,1.9,4.3,4.3v31.8C141.2,43.3,139.3,45.2,137,45.2z"></path>
+	
+<path fill="#000000" d="M21.7,35.4h-2.4c-0.4,0-0.8-0.4-0.8-0.8V15.4c0-0.4,0.4-0.8,0.8-0.8h2.4
+	c0.4,0,0.8,0.4,0.8,0.8v19.3C22.5,35.1,22.1,35.4,21.7,35.4z">
+	<animateTransform attributeName="transform" 
+		 attributeType="XML" 
+		 type="rotate" 
+		 from="0 50 50" 
+		 to="360 50 50" 
+		 dur="10s" 
+		 repeatCount="indefinite"  />
+	
+</path>	
+
+<path fill="#000000"  d="M36.4,35.4H34c-0.4,0-0.8-0.4-0.8-0.8V15.4c0-0.4,0.4-0.8,0.8-0.8h2.4
+	c0.4,0,0.8,0.4,0.8,0.8v19.3C37.2,35.1,36.9,35.4,36.4,35.4z">
+	<animateTransform id="logolo"
+		attributeName="transfom"
+		attributeType="XML"
+		type="translate"
+		begin="0.1"
+		dur="1s"
+		values="0,6;0,-6;0,-6"
+		repeatCount="indefinite"/>
+	
+</path>	
+<path fill="#000000"  d="M51.7,35.4h-2.4c-0.4,0-0.8-0.4-0.8-0.8V15.4c0-0.4,0.4-0.8,0.8-0.8h2.4
+	c0.4,0,0.8,0.4,0.8,0.8v19.3C52.5,35.1,52.1,35.4,51.7,35.4z">
+	<animateTransform id="logolo"
+		attributeName="transfom"
+		attributeType="XML"
+		type="translate"
+		begin="0.2"
+		dur="1s"
+		values="0,6;0,-6;0,6"
+		repeatCount="indefinite"/>
+	
+</path>	
+<path fill="#000000" d="M66.4,35.4H64c-0.4,0-0.8-0.4-0.8-0.8V15.4c0-0.4,0.4-0.8,0.8-0.8h2.4
+	c0.4,0,0.8,0.4,0.8,0.8v19.3C67.2,35.1,66.9,35.4,66.4,35.4z">
+	<animateTransform id="logolo"
+		attributeName="transfom"
+		attributeType="XML"
+		type="translate"
+		begin="0.3"
+		dur="1s"
+		values="0,6;0,-6;0,6"
+		repeatCount="indefinite"/>
+	
+</path>	
+<path fill="#000000" d="M81.9,35.3h-2.4c-0.4,0-0.8-0.4-0.8-0.8V15.2c0-0.4,0.4-0.8,0.8-0.8h2.4
+	c0.4,0,0.8,0.4,0.8,0.8v19.3C82.7,35,82.3,35.3,81.9,35.3z">
+	<animateTransform id="logolo"
+		attributeName="transfom"
+		attributeType="XML"
+		type="translate"
+		begin="0.4"
+		dur="1s"
+		values="0,6;0,-6;0,6"
+		repeatCount="indefinite"  />
+	
+</path>	
+<path fill="#000000" d="M96.6,35.3h-2.4c-0.4,0-0.8-0.4-0.8-0.8V15.2c0-0.4,0.4-0.8,0.8-0.8h2.4
+	c0.4,0,0.8,0.4,0.8,0.8v19.3C97.4,35,97.1,35.3,96.6,35.3z">
+	<animateTransform id="logolo"
+		attributeName="transfom"
+		attributeType="XML"
+		type="translate"
+		begin="0.5"
+		dur="1s"
+		values="0,6;0,-6;0,6"
+		repeatCount="indefinite"/>
+	
+</path>	
+<path fill="#000000" d="M111.9,35.3h-2.4c-0.4,0-0.8-0.4-0.8-0.8V15.2c0-0.4,0.4-0.8,0.8-0.8h2.4
+	c0.4,0,0.8,0.4,0.8,0.8v19.3C112.7,35,112.3,35.3,111.9,35.3z">
+	<animateTransform id="logolo"
+		attributeName="transfom"
+		attributeType="XML"
+		type="translate"
+		begin="0.6"
+		dur="1s"
+		values="0,6;0,-6;0,-6"
+		repeatCount="indefinite"/>
+	
+</path>	
+<path fill="#000000" d="M126.6,35.3h-2.4c-0.4,0-0.8-0.4-0.8-0.8V15.2c0-0.4,0.4-0.8,0.8-0.8h2.4
+	c0.4,0,0.8,0.4,0.8,0.8v19.3C127.4,35,127.1,35.3,126.6,35.3z">
+	<animateTransform id="logolo"
+		attributeName="transfom"
+		attributeType="XML"
+		type="translate"
+		begin="0.7"
+		dur="1s"
+		values="0,6;0,-6;0,6"
+		repeatCount="indefinite"/>
+	
+</path>	
+
+
+</svg>
+
+
+

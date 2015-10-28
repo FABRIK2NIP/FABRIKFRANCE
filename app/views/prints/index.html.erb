@@ -1,0 +1,66 @@
+
+
+
+
+<div style="text-align: center; width:100%; position:relative; margin:0 auto; height:1350px; background-color:black; margin-top:-200px; padding-top:190px;">
+	<h1 style="color:white; font-size:40px;">PRINTS LIST</h1>
+	
+<br>
+<br>
+
+
+<div style="width:680px; text-align:center; background-color:black;  margin: 0 auto; margin-top:20px; margin-bottom:20px;border-radius:5px; padding:60px;padding-top: 30px; padding-bottom:60px; border: 1px solid white">
+<div style="width:680px; text-align:center; background-color:black;  margin: 0 auto; margin-top:0px; margin-bottom:0px;">
+<table style="width:100%;">
+<table style="width:100%; ">
+  <thead>
+    <tr>
+      <th style="width:40px;">ID</th>
+      <th style="width:150px;">Attachment</th>
+      <th style="width:100px;">Materiau</th>
+      <th style="width:100px;">Qualité</th>
+      <th style="width:100px;">Livraison</th>
+      <th style="width:120px;">Adresse</th>
+      <th></th>
+
+    </tr>
+  </thead>
+</table>
+
+  <tbody style="display: block;  height:600px; overflow: auto; width:100%">
+	  <table style=" display:block; height:640px; overflow-y: scroll; width:100%">
+  	<% @prints.each do |print| %>
+      <tr style="width:100%; max-height:40px;">
+		  
+        <td style="width:40px;"><%= print.id %></td>
+        <td style="width:150px;"><%= link_to "Download File", print.attachment_url %></td>
+        <td style="width:100px;"><%= print.materiau %></td>
+        <td style="width:100px;"><%= print.qualite %></td>
+        <td style="width:100px;  "><%= print.livraison %></td>
+		 <td style="width:120px; overflow: auto; margin-top:15px; margin-bottom:15px;" ><%= print.address %></td>
+        <td style=""><%= link_to 'Destroy', print, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+		
+	 </tr>
+    <% end %>
+  </tbody>
+</table>
+</table>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<br>
+<%= link_to 'New Print', prints_path, method: :create, :class => 'btn btn-2 btn-2c', confirm: 'Êtes vous sur de supprimer cette impression ?' %>
+</div>
+
+
+
+
+

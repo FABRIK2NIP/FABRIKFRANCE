@@ -1,0 +1,199 @@
+	
+	  <style>
+	      html, body {
+	        height: 100%;
+	       
+			text-align:center;
+	      }
+	      #map {
+			position:absolute;
+			left:-10%;
+			top:10%;
+			
+	        height: 2200px;
+			width:120%;
+			margin:0 auto;
+			margin-top:-1100px;
+		
+	      }
+	#floating-panel {
+	  position: absolute;
+	  top: 50%;
+	  left:50%;
+	  margin: auto;
+	  margin-left:-190px;
+	  margin-top:-316px;
+	  z-index: 5;
+	  width:380px;
+	  height:632px;
+	  text-align: center;
+	  font-family: 'San Francisco','sans-serif';
+	  border-radius:12px;
+	  border: none;
+	  box-shadow: 0.1px 0.1px 6px #D0D0D0;
+	  
+	}
+
+
+
+		
+
+
+
+	    </style>
+
+
+
+
+<%= form_for @print, method: :put, url: wizard_path do |f| %>
+  <% if f.object.errors.any? %>
+    <div class="error_messages">
+      <% f.object.errors.full_messages.each do |error| %>
+        <p><%= error %></p>
+      <% end %>
+    </div>
+  <% end %>
+
+
+
+<div style="position:fixed; position:absolute; top:0; right:0; bottom:0;left:0;text-align: center;">
+	
+  <fieldset>
+  
+	
+	
+	 
+	
+
+
+
+
+	
+	 <div id="floating-panel" style="left:none; padding:20px;">
+		 <div style=" padding:20px; border-radius:8px;width:334px; height:485px;">
+			   <div style="margin: 0 auto; width: 42%; margin-top: 0px; text-align: center; max-width:160px;">
+			   <%= image_tag("logotruck.svg", :alt => "images") %>
+		   	   </div>
+		  <h1  style="font-size:29px; letter-spacing: 1px; margin-top:0px; margin-bottom:10px;">Adresse de livraison</h1>
+		  <br style="height:30px;">
+		  <div style="margin: 0 auto; width:274px">
+	 	  <%= f.text_field :address, :onclick => "this.value=''", :value => 'Adresse', :class => 'champtexte', :id => 'address'%>
+		  <%= f.text_field :town, :onclick => "this.value=''", :value => 'Ville', :class => 'champtexte2', :id => 'town'%>
+		
+		  <%= f.text_field :departement, :onclick => "this.value=''", :value => 'Département', :class => 'champtexte3', :id => 'departement'%>
+		  <%= f.text_field :zipcode, :onclick => "this.value=''", :value => 'ZIP code', :class => 'champtexte4', :id => 'zipcode'%>
+	  
+		  <%= f.text_field :pays, :onclick => "this.value=''", :value => 'Pays', :class => 'champtexte5', :id => 'pays'%>
+	     </div>	  
+	  		<br>
+	
+	  	  <br>
+		  <div style="position:absolute; left:50%; margin-left:-130px; top:80%; margin-top:-30px;">
+		  <%= f.submit 'Suite', :class => 'btn btn-2 btn-2c' %>
+	  </div>
+		  <input class="btn btn-2 btn-2c" style="margin-top:30px;" id="submit" type="button" onClick = "this.style.visibility= 'hidden';" value="Actualiser">
+		   
+
+	      <div>
+	       
+	      </div>
+		  
+	    </div>
+	    </div>
+	    <div id="map"></div>
+	  
+	  
+	  
+	    </fieldset>
+	  
+	  
+	  </div>
+	  
+	  
+	  
+	   
+	   
+	   
+	   
+	   
+	    <script>
+		
+	   
+
+	       function setInput(button) {
+	          var buttonVal = button.name,
+	          textbox = document.getElementById();
+			  button.style.visibility = "hidden";
+	       }
+		
+		
+		
+		
+		
+		
+		
+		
+	function initMap() {
+	  var map = new google.maps.Map(document.getElementById('map'), {
+	    zoom:15,
+	    center: {lat: 48.766175, lng: 2.346939},
+		  	zoomControl: false,
+            disableDoubleClickZoom: true,
+            mapTypeControl: false,
+            scaleControl: false,
+            scrollwheel: false,
+            panControl: false,
+            streetViewControl: false,
+            draggable : true,
+            overviewMapControl: false,
+            overviewMapControlOptions: {
+                opened: false,
+            },  
+		  
+		styles: [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}],
+		
+	  });
+	  var geocoder = new google.maps.Geocoder();
+
+	  document.getElementById('submit').addEventListener('click', function() {
+	    geocodeAddress(geocoder, map);
+	  });
+	}
+	
+	
+	
+	
+
+	function geocodeAddress(geocoder, resultsMap) {
+		var image = {
+    		url: "http://www.clker.com/cliparts/n/h/P/0/8/6/google-map-pointer-black-th.png",
+    		anchor: new google.maps.Point(0,0),
+        	scaledSize: new google.maps.Size(40,65)
+		};
+		
+		
+	  var address = document.getElementById('address').value + document.getElementById('town').value + document.getElementById('departement').value +  document.getElementById('zipcode').value + document.getElementById('pays').value;
+	  geocoder.geocode({'address': address}, function(results, status) {
+	    if (status === google.maps.GeocoderStatus.OK) {
+	      resultsMap.setCenter(results[0].geometry.location);
+	      var marker = new google.maps.Marker({
+	        map: resultsMap,
+	        position: results[0].geometry.location,
+			icon: image,
+	      });
+	    } else {
+	      alert('Geocode was not successful for the following reason: ' + status);
+	    }
+	  });
+	}
+
+	    </script>
+	    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdswsD15uIdYbXF8WyxLIoe2yvrWRid8c&signed_in=true&callback=initMap"
+	        async defer></script>
+	
+	
+	
+	
+
+<% end %>
+

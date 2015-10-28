@@ -1,0 +1,886 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 976.044 525.581" enable-background="new 0 0 976.044 525.581" xml:space="preserve">
+<style type="text/css">
+
+.st0 {
+			
+			-webkit-animation-name: fade ;
+			-webkit-animation-duration: 0.5s;
+			-webkit-animation-iteration-count: 1;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay:2s;
+  			-o-animation: fade 0.5s linear forwards;
+			-moz-animation: fade 0.5s linear forwards;
+			animation-name: fade ;
+			animation-duration: 0.5s;
+			animation-iteration-count: 1;
+			animation-fill-mode: forwards;
+			animation-delay: 2s;
+			
+	}
+
+	@-webkit-keyframes fade {
+		 from {
+		    opacity: 1;
+		  }
+		
+		  to {
+		    opacity: 0;
+		  }
+		}
+
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.st1 {
+			
+			-webkit-animation-name: fade1 ;
+			-webkit-animation-duration: 0.5s;
+			-webkit-animation-iteration-count: 1;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-fill-mode: forwards;
+  			-o-animation: fade1 0.5s linear forwards;
+			-moz-animation: fade1 0.5s linear forwards;
+			animation-name: fade1 ;
+			animation-duration: 0.5s;
+			animation-iteration-count: 1;
+			animation-fill-mode: forwards;
+			animation-delay: 20s;
+			-webkit-animation-delay: 20s;
+	}
+
+	@-webkit-keyframes fade1 {
+		 from {
+		    opacity: 1;
+		  }
+		
+		  to {
+		    opacity: 0;
+		  }
+		}
+
+@keyframes fade1 {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.st2 {
+			
+			-webkit-animation-name: fade2 ;
+			-webkit-animation-duration: 0.5s;
+			-webkit-animation-iteration-count: 1;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay:21s;
+  			-o-animation: fade2 0.5s linear forwards;
+			-moz-animation: fade2 0.5s linear forwards;
+			animation-name: fade2 ;
+			animation-duration: 0.5s;
+			animation-iteration-count: 1;
+			animation-fill-mode: forwards;
+			animation-delay: 21s;
+			
+	}
+
+	@-webkit-keyframes fade2 {
+		 from {
+		    opacity: 1;
+		  }
+		
+		  to {
+		    opacity: 0;
+		  }
+		}
+
+@keyframes fade2 {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+
+.st3 {
+			
+			-webkit-animation-name: fade1 ;
+			-webkit-animation-duration: 0.5s;
+			-webkit-animation-iteration-count: 1;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay:30s;
+  			-o-animation: fade1 0.5s linear forwards;
+			-moz-animation: fade1 0.5s linear forwards;
+			animation-name: fade1 ;
+			animation-duration: 0.5s;
+			animation-iteration-count: 1;
+			animation-fill-mode: forwards;
+			animation-delay: 30s;
+			
+	}
+
+	@-webkit-keyframes fade1 {
+		 from {
+		    opacity: 1;
+		  }
+		
+		  to {
+		    opacity: 0;
+		  }
+		}
+
+@keyframes fade1 {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.st4 {
+			
+			-webkit-animation-name: fade4 ;
+			-webkit-animation-duration: 0.5s;
+			-webkit-animation-iteration-count: 1;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay:31s;
+  			-o-animation: fade4 0.5s linear forwards;
+			-moz-animation: fade4 0.5s linear forwards;
+			animation-name: fade4 ;
+			animation-duration: 0.5s;
+			animation-iteration-count: 1;
+			animation-fill-mode: forwards;
+			animation-delay: 31s;
+			
+	}
+
+	@-webkit-keyframes fade4 {
+		 from {
+		    opacity: 1;
+		  }
+		
+		  to {
+		    opacity: 0;
+		  }
+		}
+
+@keyframes fade4 {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+
+}
+
+.st5 {
+			
+			-webkit-animation-name: fade5 ;
+			-webkit-animation-duration: 0.5s;
+			-webkit-animation-iteration-count: 1;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay:45s;
+  			-o-animation: fade5 0.5s linear forwards;
+			-moz-animation: fade5 0.5s linear forwards;
+			animation-name: fade5 ;
+			animation-duration: 0.5s;
+			animation-iteration-count: 1;
+			animation-fill-mode: forwards;
+			animation-delay: 45s;
+			
+	}
+
+	@-webkit-keyframes fade5 {
+		 from {
+		    opacity: 1;
+		  }
+		
+		  to {
+		    opacity: 0;
+		  }
+		}
+
+@keyframes fade5 {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+
+
+.st6 {
+			
+			-webkit-animation-name: fade6 ;
+			-webkit-animation-duration: 0.5s;
+			-webkit-animation-iteration-count: 1;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay:46s;
+  			-o-animation: fade6 0.5s linear forwards;
+			-moz-animation: fade6 0.5s linear forwards;
+			animation-name: fade6 ;
+			animation-duration: 0.5s;
+			animation-iteration-count: 1;
+			animation-fill-mode: forwards;
+			animation-delay: 46s;
+			
+	}
+
+	@-webkit-keyframes fade6 {
+		 from {
+		    opacity: 1;
+		  }
+		
+		  to {
+		    opacity: 0;
+		  }
+		}
+
+@keyframes fade6 {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+
+
+.st7 {
+			
+			-webkit-animation-name: fade7 ;
+			-webkit-animation-duration: 0.5s;
+			-webkit-animation-iteration-count: 1;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay:70s;
+  			-o-animation: fade7 0.5s linear forwards;
+			-moz-animation: fade7 0.5s linear forwards;
+			animation-name: fade7 ;
+			animation-duration: 0.5s;
+			animation-iteration-count: 1;
+			animation-fill-mode: forwards;
+			animation-delay: 70s;
+			
+	}
+
+	@-webkit-keyframes fade7 {
+		 from {
+		    opacity: 1;
+		  }
+		
+		  to {
+		    opacity: 0;
+		  }
+		}
+
+@keyframes fade7 {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+
+.st8 {
+			
+			-webkit-animation-name: fade8 ;
+			-webkit-animation-duration: 0.4s;
+			-webkit-animation-iteration-count: 1;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay:71s;
+  			-o-animation: fade8 0.4s linear forwards;
+			-moz-animation: fade8 0.4s linear forwards;
+			animation-name: fade8 ;
+			animation-duration: 0.4s;
+			animation-iteration-count: 1;
+			animation-fill-mode: forwards;
+			animation-delay: 71s;
+			
+	}
+
+	@-webkit-keyframes fade8 {
+		 from {
+		    opacity: 1;
+		  }
+		
+		  to {
+		    opacity: 0;
+		  }
+		}
+
+@keyframes fade8 {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+
+.anim {
+			stroke-dasharray: 200;
+			stroke-dashoffset:0;
+			-webkit-animation: dash 20s linear forwards;
+			-o-animation: dash 20s linear forwards;
+			-moz-animation: dash 20s linear forwards;
+			-webkit-animation-delay:2s;
+			animation: dash 20s linear forwards;
+			animation-delay: 2s;
+
+}
+
+
+
+@-webkit-keyframes dash {
+			from {
+				stroke-dashoffset: 200;
+			}
+			to {
+				stroke-dashoffset: 0;
+			}
+		
+		
+		}
+		
+		
+		@keyframes dash {
+			from {
+				stroke-dashoffset: 200;
+			}
+			to {
+				stroke-dashoffset: 0;
+			}
+		
+		
+		}
+		
+
+
+.anim2 {
+			stroke-dasharray: 200;
+			stroke-dashoffset:0;
+			-webkit-animation: dash 9s linear forwards;
+			-o-animation: dash 9s linear forwards;
+			-moz-animation: dash 9s linear forwards;
+			-webkit-animation-delay:21s;
+			animation: dash 9s linear forwards;
+			animation-delay: 21s;
+
+}
+
+
+
+@-webkit-keyframes dash2 {
+			from {
+				stroke-dashoffset: 200;
+			}
+			to {
+				stroke-dashoffset: 0;
+			}
+		
+		
+		}
+		
+		
+		@keyframes dash2 {
+			from {
+				stroke-dashoffset: 200;
+			}
+			to {
+				stroke-dashoffset: 0;
+			}
+		
+		
+		}
+		
+		.anim4 {
+			stroke-dasharray: 200;
+			stroke-dashoffset:0;
+			-webkit-animation: dash 12.5s linear forwards;
+			-o-animation: dash 12.5s linear forwards;
+			-moz-animation: dash 12.5s linear forwards;
+			-webkit-animation-delay:32s;
+			animation: dash 12.5s linear forwards;
+			animation-delay: 32s;
+
+}
+
+
+
+@-webkit-keyframes dash2 {
+			from {
+				stroke-dashoffset: 200;
+			}
+			to {
+				stroke-dashoffset: 0;
+			}
+		
+		
+		}
+		
+		
+		@keyframes dash2 {
+			from {
+				stroke-dashoffset: 200;
+			}
+			to {
+				stroke-dashoffset: 0;
+			}
+		
+		
+		}
+		
+		
+		.anim3 {
+			stroke-dasharray: 200;
+			stroke-dashoffset:0;
+			-webkit-animation: dash3 10s linear forwards;
+			-o-animation: dash3 10s linear forwards;
+			-moz-animation: dash3 10s linear forwards;
+			-webkit-animation-delay:40s;
+			animation: dash3 10s linear forwards;
+			animation-delay: 40s;
+
+}
+
+
+
+@-webkit-keyframes dash3 {
+			from {
+				stroke-dashoffset: 200;
+			}
+			to {
+				stroke-dashoffset: 0;
+			}
+		
+		
+		}
+		
+		
+		@keyframes dash3 {
+			from {
+				stroke-dashoffset: 200;
+			}
+			to {
+				stroke-dashoffset: 0;
+			}
+		
+		
+		}
+		
+		
+		
+.hide {
+			
+			-webkit-animation-name: hide ;
+			-webkit-animation-duration: 0s;
+			-webkit-animation-iteration-count: 1;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay:2s;
+  			-o-animation: hide 0s linear forwards;
+			-moz-animation: hide 0s linear forwards;
+			animation-name: hide ;
+			animation-duration: 0s;
+			animation-iteration-count: 1;
+			animation-fill-mode: forwards;
+			animation-delay: 2s;
+			
+	}
+
+	@-webkit-keyframes hide {
+		 from {
+		    opacity: 1;
+		  }
+		
+		  to {
+		    opacity: 0;
+		  }
+		}
+
+@keyframes hide {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+
+.hide2 {
+			
+			-webkit-animation-name: hide2 ;
+			-webkit-animation-duration: 0s;
+			-webkit-animation-iteration-count: 1;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay:21s;
+  			-o-animation: hide2 0s linear forwards;
+			-moz-animation: hide2 0s linear forwards;
+			animation-name: hide2 ;
+			animation-duration: 0s;
+			animation-iteration-count: 1;
+			animation-fill-mode: forwards;
+			animation-delay: 21s;
+			
+	}
+
+	@-webkit-keyframes hide2 {
+		 from {
+		    opacity: 1;
+		  }
+		
+		  to {
+		    opacity: 0;
+		  }
+		}
+
+@keyframes hide2 {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.hide3 {
+			
+			-webkit-animation-name: hide3 ;
+			-webkit-animation-duration: 0s;
+			-webkit-animation-iteration-count: 1;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay:32s;
+  			-o-animation: hide3 0s linear forwards;
+			-moz-animation: hide3 0s linear forwards;
+			animation-name: hide3 ;
+			animation-duration: 0s;
+			animation-iteration-count: 1;
+			animation-fill-mode: forwards;
+			animation-delay: 32s;
+			
+	}
+
+	@-webkit-keyframes hide3 {
+		 from {
+		    opacity: 1;
+		  }
+		
+		  to {
+		    opacity: 0;
+		  }
+		}
+
+@keyframes hide3 {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+	
+	
+	.fade9 {
+			
+			-webkit-animation-name: fade9 ;
+			-webkit-animation-duration: 0.5s;
+			-webkit-animation-iteration-count: 1;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay:50s;
+  			-o-animation: fade9 0.5s linear forwards;
+			-moz-animation: fade9 0.5s linear forwards;
+			animation-name: fade9 ;
+			animation-duration: 0.5s;
+			animation-iteration-count: 1;
+			animation-fill-mode: forwards;
+			animation-delay: 50s;
+			
+	}
+
+	@-webkit-keyframes fade9 {
+		 from {
+		    opacity: 1;
+		  }
+		
+		  to {
+		    opacity: 0;
+		  }
+		}
+
+@keyframes fade9 {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}	
+		
+</style>
+
+
+
+<g>
+	<rect x="180.141" y="86.03" fill="#000000" width="616.221" height="11.226"/>
+	<circle fill="#5961E0" stroke="#000000" stroke-width="8" stroke-miterlimit="10" cx="847.15" cy="88.368" r="55.841"/>
+	<circle fill="#5961E0" stroke="#000000" stroke-width="8" stroke-miterlimit="10" cx="605.974" cy="88.368" r="55.841"/>
+	<circle fill="#5961E0" stroke="#000000" stroke-width="8" stroke-miterlimit="10" cx="364.644" cy="88.368" r="55.841"/>
+	<circle fill="#5961E0" stroke="#000000" stroke-width="8" stroke-miterlimit="10" cx="124.496" cy="88.368" r="55.841"/>
+
+	<rect x="804.657" y="67" fill="none" width="84.987" height="95.333"/>
+	
+		<text transform="matrix(1 0 0 1 830.3072 107.1119)" fill="#ffffff" font-family="'SanFranciscoDisplay-Regular'" font-size="59.9899" letter-spacing="4">4</text>
+	<rect x="563.48" y="67" fill="none" width="84.987" height="95.333"/>
+	
+		<text transform="matrix(1 0 0 1 589.5855 107.1119)" fill="#ffffff" font-family="'SanFranciscoDisplay-Regular'" font-size="59.9899" letter-spacing="4">3</text>
+	<rect x="322.741" y="66.651" fill="none" width="84.987" height="95.333"/>
+	
+		<text transform="matrix(1 0 0 1 349.1392 106.7642)" fill="#ffffff" font-family="'SanFranciscoDisplay-Regular'" font-size="59.9899" letter-spacing="4">2</text>
+	<rect x="80.188" y="66.465" fill="none" width="84.987" height="95.333"/>
+	
+		<text transform="matrix(1 0 0 1 111.0381 106.5777)" fill="#ffffff" font-family="'SanFranciscoDisplay-Regular'" font-size="59.9899" letter-spacing="4">1</text>
+</g>
+
+<rect x="162.441" y="365.721" fill="none" width="666.279" height="79.07"/>
+<text transform="matrix(1 0 0 1 179.4525 388.9918)"><tspan x="0" y="0" font-family="'SanFranciscoDisplay-Regular'" font-size="36" letter-spacing="5">Download is complete. You can </tspan><tspan x="38.39" y="51" font-family="'SanFranciscoDisplay-Regular'" font-size="36" letter-spacing="5">now personnalise your file. </tspan></text>
+
+
+
+
+/* Ligne noir de défilement */
+
+
+<g class="fade9">
+	
+		
+		
+		
+		
+		
+		
+		<rect x="162.441" y="372.721" fill="none" width="666.279" height="79.07"/>
+		<rect x="180.141" y="87.458" fill="white" stroke="#000000" stroke-width="3" stroke-miterlimit="10" width="128.165" height="8.306"/>
+		<rect x="421.446" y="87.458" fill="white" stroke="#000000" stroke-width="3" stroke-miterlimit="10" width="128.165" height="8.306"/>
+		<rect x="662.196" y="87.458" fill="white" stroke="#000000" stroke-width="3" stroke-miterlimit="10" width="128.165" height="8.306"/>
+		
+		<g class="anim">
+		<line fill="none" stroke="black" stroke-width="7" stroke-miterlimit="10" x1="125.727" y1="92.831" x2="367.7" y2="92.831"/>
+		</g>
+		
+		<g class="anim2">
+		<line fill="none" stroke="black" stroke-width="7" stroke-miterlimit="10" x1="352.314" y1="92.831" x2="594.287" y2="92.831"/>
+		</g>
+		
+		<g class="anim4">
+		<line fill="none" stroke="black" stroke-width="7" stroke-miterlimit="10" x1="615.844" y1="92.831" x2="857.817" y2="92.831"/>
+		</g>
+		
+		<g class="hide">
+		<rect x="180.141" y="87.458" fill="white" stroke="#000000" stroke-width="3" stroke-miterlimit="10" width="128.165" height="8.306"/>
+		</g>
+		
+		<g class="hide2">
+		<rect x="421.446" y="87.458" fill="white" stroke="#000000" stroke-width="3" stroke-miterlimit="10" width="128.165" height="8.306"/>
+		</g>
+	
+		<g class="hide3">
+		<rect x="662.196" y="87.458" fill="white" stroke="#000000" stroke-width="3" stroke-miterlimit="10" width="128.165" height="8.306"/>
+		</g>
+</g>
+
+
+
+	
+		
+	<rect x="-9.379" y="252.023" fill="none" width="994.801" height="259.302"/>
+	<text transform="matrix(1 0 0 1 171.1124 308.1827)" font-family="'SanFranciscoDisplay-Regular'" font-size="80" letter-spacing="6">READY TO PRINT</text>
+
+
+/* Retrait fond blanc et apparition fond vert */
+
+
+<g class="st8">
+	<g>
+		<circle cx="846.336" cy="88.401" r="58.705"/>
+		<rect x="802.029" y="66.498" fill="none" width="84.987" height="95.333"/>
+		
+			<text transform="matrix(1 0 0 1 827.6801 106.6104)" fill="#FFFFFF" font-family="'SanFranciscoDisplay-Regular'" font-size="59.9899" letter-spacing="4">4</text>
+	</g>
+	<g>
+		<circle cx="605.974" cy="88.805" r="58.705"/>
+		<rect x="561.667" y="66.902" fill="none" width="84.987" height="95.333"/>
+		
+			<text transform="matrix(1 0 0 1 587.771 107.0154)" fill="#FFFFFF" font-family="'SanFranciscoDisplay-Regular'" font-size="59.9899" letter-spacing="4">3</text>
+	</g>
+	<g>
+		<circle cx="364.7" cy="89.115" r="58.705"/>
+		<rect x="320.393" y="67.212" fill="none" width="84.987" height="95.333"/>
+		
+			<text transform="matrix(1 0 0 1 346.7906 107.325)" fill="#FFFFFF" font-family="'SanFranciscoDisplay-Regular'" font-size="59.9899" letter-spacing="4">2</text>
+	</g>
+	<g>
+		<circle cx="124.727" cy="89.805" r="58.705"/>
+		<rect x="80.42" y="67.902" fill="none" width="84.987" height="95.333"/>
+		
+			<text transform="matrix(1 0 0 1 111.2696 108.0151)" fill="#FFFFFF" font-family="'SanFranciscoDisplay-Regular'" font-size="59.9899" letter-spacing="4">1</text>
+	</g>
+
+
+	<rect x="14.328" y="231.987" fill="#FFFFFF" width="934.199" height="286.68"/>
+
+</g>
+
+/* Retrait bouton bleu 4 et texte 4 */
+
+<g class="st7">
+	<circle fill="#5961E0" stroke="#000000" stroke-width="4" stroke-miterlimit="10" cx="847.15" cy="88.705" r="58.705"/>
+	<rect x="802.843" y="66.802" fill="none" width="84.987" height="95.333"/>
+<text transform="matrix(1 0 0 1 828.4937 106.9145)" fill="#FFFFFF" font-family="'SanFranciscoDisplay-Regular'" font-size="59.9899" letter-spacing="4">4</text>
+
+	
+	<rect x="165.423" y="372.721" fill="none" width="666.279" height="79.07"/>
+	<text transform="matrix(1 0 0 1 188.8164 395.9918)"><tspan x="0" y="0" font-family="'SanFranciscoDisplay-Regular'" font-size="36" letter-spacing="5">The file is being optimised for </tspan><tspan x="111.694" y="51" font-family="'SanFranciscoDisplay-Regular'" font-size="36" letter-spacing="5">FABRIK 3D printers.</tspan></text>
+	<rect x="-6.397" y="252.023" fill="none" width="994.801" height="259.302"/>
+	<text transform="matrix(1 0 0 1 212.6531 308.1827)" font-family="'SanFranciscoDisplay-Regular'" font-size="80" letter-spacing="6">OPTIMISATION</text>
+
+
+</g>
+
+/* Retrait bouton blanc 4 et fond du texte 3 */
+
+<g class="st6">
+	<circle fill="#FFFFFF" stroke="#000000" stroke-width="4" stroke-miterlimit="10" cx="847.15" cy="89.368" r="55.841"/>
+	<rect x="804.657" y="68" fill="none" width="84.987" height="95.333"/>
+	
+		<text transform="matrix(1 0 0 1 830.3071 108.1119)" font-family="'SanFranciscoDisplay-Regular'" font-size="59.9899" letter-spacing="4">4</text>
+
+<rect x="14.328" y="223.987" fill="#FFFFFF" width="934.199" height="286.68"/>
+</g>
+
+/* Retrait bouton bleu 3 et texte du 3 */
+
+<g class="st5">
+	<circle fill="#5960E0" stroke="#000000" stroke-width="4" stroke-miterlimit="10" cx="605.974" cy="89.818" r="58.705"/>
+	<rect x="561.667" y="67.915" fill="none" width="84.987" height="95.333"/>
+	
+		<text transform="matrix(1 0 0 1 587.771 108.0274)" fill="#FFFFFF" font-family="'SanFranciscoDisplay-Regular'" font-size="59.9899" letter-spacing="4">3</text>
+
+
+<rect x="94.777" y="364.721" fill="none" width="807.57" height="95.837"/>
+<text transform="matrix(1 0 0 1 121.1299 387.9928)"><tspan x="0" y="0" font-family="'SanFranciscoDisplay-Regular'" font-size="36" letter-spacing="5">We are looking for weak point, wrong </tspan><tspan x="14.607" y="51" font-family="'SanFranciscoDisplay-Regular'" font-size="36" letter-spacing="5">triangulations et holes to optimise.</tspan></text>
+<rect x="-6.397" y="244.023" fill="none" width="994.801" height="259.302"/>
+<text transform="matrix(1 0 0 1 286.489 300.1827)" font-family="'SanFranciscoDisplay-Regular'" font-size="80" letter-spacing="6">SCANNING</text>
+</g>
+
+/* retrait bouton blanc 3 et carré du fond 2 */ 
+<g class="st4">
+	<circle fill="#FFFFFF" stroke="#000000" stroke-width="4" stroke-miterlimit="10" cx="605.974" cy="89.368" r="55.841"/>
+	<rect x="563.48" y="68" fill="none" width="84.987" height="95.333"/>
+	
+	<text transform="matrix(1 0 0 1 589.5854 108.1119)" font-family="'SanFranciscoDisplay-Regular'" font-size="59.9899" letter-spacing="4">3</text>
+	
+	<rect x="14.328" y="224.334" fill="#FFFFFF" width="934.199" height="286.68"/>
+</g>
+
+
+
+/* retrait bouton bleu 2 et texte 2*/
+
+
+<g class="st3">
+	<circle fill="#5960E0" stroke="#000000" stroke-width="4" stroke-miterlimit="10" cx="364.644" cy="88.818" r="58.705"/>
+	<rect x="320.337" y="66.915" fill="none" width="84.987" height="95.333"/>
+	
+		<text transform="matrix(1 0 0 1 346.7349 107.0274)" fill="#FFFFFF" font-family="'SanFranciscoDisplay-Regular'" font-size="59.9899" letter-spacing="4">2</text>
+
+
+<rect x="94.777" y="365.068" fill="none" width="807.57" height="95.837"/>
+<text transform="matrix(1 0 0 1 107.9414 388.34)"><tspan x="0" y="0" font-family="'SanFranciscoDisplay-Regular'" font-size="36" letter-spacing="5">Counting components &amp; faces, volume </tspan><tspan x="158.535" y="51" font-family="'SanFranciscoDisplay-Regular'" font-size="36" letter-spacing="5">&amp; printable dimension.</tspan></text>
+<rect x="-6.397" y="244.37" fill="none" width="994.801" height="259.302"/>
+<text transform="matrix(1 0 0 1 319.157 300.5299)" font-family="'SanFranciscoDisplay-Regular'" font-size="80" letter-spacing="6">READING</text>
+</g>
+
+/*retrait bouton blanc 2 et fond */
+
+<g class="st2">
+
+	
+	<circle fill="#FFFFFF" stroke="#000000" stroke-width="4" stroke-miterlimit="10" cx="364.644" cy="89.368" r="55.841"/>
+	<rect x="322.741" y="67.651" fill="none" width="84.987" height="95.333"/>
+		
+	<text transform="matrix(1 0 0 1 349.1392 107.7642)" font-family="'SanFranciscoDisplay-Regular'" font-size="59.9899" letter-spacing="4">2</text>
+	<rect x="14.967" y="220" fill="#FFFFFF" width="934.199" height="286.68"/>
+	
+
+</g>
+/*retrait bouton bleu et texte Upload */
+
+<g class="st1">
+	
+	<circle fill="#5960E0" stroke="#000000" stroke-width="4" stroke-miterlimit="10" cx="124.496" cy="88.705" r="58.705"/>
+	<rect x="80.188" y="66.802" fill="none" width="84.987" height="95.333"/>
+	
+	<text transform="matrix(1 0 0 1 111.0386 106.9147)" fill="#FFFFFF" font-family="'SanFranciscoDisplay-Regular'" font-size="59.9899" letter-spacing="4">1</text>
+	
+		
+	<rect x="95.416" y="360.734" fill="none" width="807.57" height="95.837"/>
+	<text transform="matrix(1 0 0 1 143.1357 384.0057)"><tspan x="0" y="0" font-family="'SanFranciscoDisplay-Regular'" font-size="36" letter-spacing="5">Your file is being transfered to our </tspan><tspan x="287.576" y="51" font-family="'SanFranciscoDisplay-Regular'" font-size="36" letter-spacing="5">server.</tspan></text>
+	<rect x="-5.758" y="240.036" fill="none" width="994.801" height="259.302"/>
+	<text transform="matrix(1 0 0 1 265.6701 296.1956)" font-family="'SanFranciscoDisplay-Regular'" font-size="80" letter-spacing="6">UPLOADING</text>
+</g>
+
+/*retrait bouton 1 blanc et fond blanc */
+
+		<g class="st0">
+			<circle fill="#FFFFFF" stroke="#000000" stroke-width="4" stroke-miterlimit="10" cx="124.496" cy="89.368" r="55.841"/>
+			<rect x="80.188" y="67.465" fill="none" width="84.987" height="95.333"/>
+			
+			<text  transform="matrix(1 0 0 1 111.0381 107.5777)" font-family="'SanFranciscoDisplay-Regular'" font-size="59.9899" letter-spacing="4" >1</text>
+			<rect x="-5.758" y="240.036" fill="white" width="994.801" height="259.302"/>
+		</g>
+</svg>

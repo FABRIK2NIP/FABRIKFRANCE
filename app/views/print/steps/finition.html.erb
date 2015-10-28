@@ -1,0 +1,669 @@
+<%= form_for @print, method: :put, url: wizard_path do |f| %>
+  <% if f.object.errors.any? %>
+    <div class="error_messages">
+      <% f.object.errors.full_messages.each do |error| %>
+        <p><%= error %></p>
+      <% end %>
+    </div>
+  <% end %>
+
+<%= content_tag :div, class: "print_attachment", data: {print: @print} do %>
+<% end %>
+
+
+<body style="text-align: center;">
+
+	<div class="interface">
+		<h1 >FABRIK</h1>
+ 		<h2 >UPLOADER</h2>
+
+		<div class="ensemble" style="height:800px;">
+			<div class="viewer">
+	
+				<div style="text-align:center; margin: 0 auto; width:100%; background-color:grey;">
+					<div class="holder" style="margin-top:80px">
+						<div class="bar"></div>
+						<iframe id="vs_iframe" src="http://www.viewstl.com/?embeded" style="border:0;margin:0;width:100%;height:100%;"></iframe>
+					</div>
+			
+					<div class="rangeboutton" style="min-width:350px;">
+						<h5> ,99 € <%= URI(request.url) + @print.attachment_url  %></h5>
+						
+						
+						<div id="mb_ad1"></div>
+						<div id="mb_ad2"></div>
+						<div id="mb_ad3"></div>
+						<div id="mb_ad4"></div>
+						<div id="mb_ad5"></div>
+						<h4 style="margin-left:95px; text-size:14px;">
+							<%= javascript_tag do %>
+		
+							document.getElementById("vs_iframe").onload=function()
+							{	
+							document.getElementById("vs_iframe").contentWindow.postMessage({msg_type:'load', url:'https://www.dropbox.com/s/43k5z77ny5f6zt5/haut_fixed.stl?dl=0'}, '*');
+							document.getElementById("vs_iframe").contentWindow.postMessage('info', '*');
+		
+							window.onmessage = function(e)
+							{
+								if (e.origin=="http://www.viewstl.com")
+								{
+									
+									var namename=("Model filename: "+e.data.filename);
+									var volumevolume=("Volume: "+e.data.volume);
+									var xx=("x: "+e.data.x);
+									var yy=("y: "+e.data.y);
+									var zz=("z: "+e.data.z);
+									document.getElementById("mb_ad1").innerHTML = namename ;
+									document.getElementById("mb_ad2").innerHTML = volumevolume ;
+									document.getElementById("mb_ad3").innerHTML = xx ;
+									document.getElementById("mb_ad4").innerHTML = yy ;
+									document.getElementById("mb_ad5").innerHTML = zz ;
+								}
+							};
+						}
+							<% end %>
+						</h4>
+						
+						
+						
+						
+						
+						
+						<hr width="80%" color="black" size="1" style="margin-top:165px;clear:both;">
+						<h5 style="float:left; clear: both; margin-left:10%; margin-top:10px;font-size:25px;font-weight:200;"><%=File.basename(@print.attachment.path)%></h5>
+						<hr width="80%" color="black" size="1" style="margin-top:65px;clear:both;">
+						
+						
+						
+						
+						<h5 style="float:left; clear: both; margin-left:35px; margin-top:35px;font-size:17px; font-weight:normal;">MATÉRIAUX : </h5>
+								<div id='materiautexteblanc' style="display:none"><p><a class="scrollTo" href="#materiau" style="font-size:19px;">PLA blanc</a> </div>
+								<div id='materiautexterouge' style="display:none"><p><a class="scrollTo" href="#materiau" style="font-size:19px;">PLA rouge</a> </div>
+								<div id='materiautextenoir' style="display:none"><p><a class="scrollTo" href="#materiau" style="font-size:19px;">PLA noir</a> </div>
+								<div id='materiautexteargent' style="display:none"><p><a class="scrollTo" href="#materiau" style="font-size:19px;">Argent</a> </div>
+								<div id='materiautexteor14' style="display:none"><p><a class="scrollTo" href="#materiau" style="font-size:19px;">Or 14K</a> </div>
+								<div id='materiautexteor18' style="display:none"><p><a class="scrollTo" href="#materiau" style="font-size:19px;">Or 18K</a> </div>
+									
+									
+									
+									
+						<h5 style="float:left; clear: both; margin-left:35px; margin-top: 50px; font-size:17px; font-weight:normal;">QUALITÉ :</h5>
+						
+								<div id='qualitebrut' style="display:none"><p><a class="scrollTo" href="#qualite" style="font-size:19px;">100 microns</a> </div>
+								<div id='qualitefini' style="display:none"><p><a class="scrollTo" href="#qualite" style="font-size:19px;">50 microns</a> </div>
+								<div id='qualitesublime' style="display:none"><p><a class="scrollTo" href="#qualite" style="font-size:19px;">20 microns</a> </div>
+						
+						
+						
+						
+						
+						<h5 style="float:left; clear: both; margin-left:35px; margin-top: 50px; font-size:17px; font-weight:normal;">LIVRAISON :</h5>
+								<div id='livraison96h' style="display:none"><p><a class="scrollTo" href="#livraison" style="font-size:19px;">96h</a> </div>
+								<div id='livraison48h' style="display:none"><p><a class="scrollTo" href="#livraison" style="font-size:19px;">48h</a> </div>
+								<div id='livraison24h' style="display:none"><p><a class="scrollTo" href="#livraison" style="font-size:19px;">24h</a> </div>
+						
+						
+						
+						
+					
+						
+						
+						
+						
+						<button class="btn btn-2 btn-2c" style="margin-left: 5%; margin-top: 70px; margin-bottom:20px; margin-right:6%; width: 80%;">PRINT</button>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<div class="material">
+				<div style="margin: 0 auto; width: 45%; margin-top: 30px; text-align: center; max-width:110px; width:30%;">
+				  <div id="materiau"><%= image_tag("material.svg", :alt => "images") %></div>
+			    </div>
+				<h4 style="text-align:center; margin: 0 auto; float:none; clear:both;margin-top:30px; font-size: 34px; font-weight: 200;"> MATÉRIAU</h4>
+				<br>
+				<br>
+		
+		
+		<div style="text-align: center; margin: 0 auto; width:860px; position: relative; margin-top: 60px;">
+		
+		
+		
+		
+		
+				<!-- Premier Bouton PLA BLANC -->
+				
+				
+				<div class="bar2" style="top:5px; left:55px; height:90px; width:330px; background-color:0px;">
+				<div style=" width:340px;height:120px;">
+					
+					<div style=" width:90px; height:85px; float:left;display:inline-block; margin-left:0px;">
+					<div id="circle" style="background-color:white; border: 1px solid black;margin-left:20px; margin-top:18px;"></div></div>
+					
+					<div style=" width:155px; height:85px; display:inline-block; float:left; margin-top:0px;">
+						<h1 style="font-size:22px; margin-top:18px;text-align:left; letter-spacing: 0.5px; margin-left:2px;" >PLA blanc</h1>
+						<h1 class="texttext" style="font-size:14px; margin-top:-1px; margin-bottom:none; margin-left:2px; text-align:left; letter-spacing: 0.5px; color:#ACACAC;">Plastique écologique</h1>			
+					 </div>
+					<div style="width:80px; height:85px; float:left;display:inline-block; margin:0px;">
+						<h1 class="texttext" style="font-size:18px; margin-top:30px; margin-right:8px; margin-bottom:none; text-align:right; letter-spacing: 0.5px;"><%= 8 + 22%>,00 €</h1>
+						
+					</div>
+				</div>
+				</div>
+				
+				
+				<!-- Deuxième Bouton PLA ROUGE -->
+				
+				
+				<div class="bar2" style="top:5px; left:455px; height:90px; width:330px; background-color:0px;">
+				<div style=" width:340px;height:120px;">
+					
+					<div style=" width:90px; height:85px; float:left;display:inline-block; margin-left:0px;">
+					<div id="circle" style="background-color:#FB989C; margin-left:20px; margin-top:18px;"></div></div>
+					
+					<div style=" width:155px; height:85px; display:inline-block; float:left; margin-top:0px;">
+						<h1 style="font-size:22px; margin-top:18px;text-align:left; letter-spacing: 0.5px; margin-left:2px;" >PLA rouge</h1>
+						<h1 class="texttext" style="font-size:14px; margin-top:-1px; margin-bottom:none; margin-left:2px; text-align:left; letter-spacing: 0.5px; color:#ACACAC;">Plastique écologique</h1>			
+					 </div>
+					<div style="width:80px; height:85px; float:left;display:inline-block; margin:0px;">
+						<h1 class="texttext" style="font-size:18px; margin-top:30px; margin-right:8px; margin-bottom:none; text-align:right; letter-spacing: 0.5px;">18,00 €</h1>
+						
+					</div>
+				</div>
+				</div>
+				
+				
+				
+				<!-- Troisième Bouton PLA NOIR -->
+				
+				
+				<div class="bar2" style="top:137px; left:55px; height:90px; width:330px; background-color:0px;">
+				<div style=" width:340px;height:120px;">
+					
+					<div style=" width:90px; height:85px; float:left;display:inline-block; margin-left:0px;">
+					<div id="circle" style="background-color:#595A5A; margin-left:20px; margin-top:18px;"></div></div>
+					
+					<div style=" width:155px; height:85px; display:inline-block; float:left; margin-top:0px;">
+						<h1 style="font-size:22px; margin-top:18px;text-align:left; letter-spacing: 0.5px; margin-left:2px;" >PLA noir</h1>
+						<h1 class="texttext" style="font-size:14px; margin-top:-1px; margin-bottom:none; margin-left:2px; text-align:left; letter-spacing: 0.5px; color:#ACACAC;">Plastique écologique</h1>			
+					 </div>
+					<div style="width:80px; height:85px; float:left;display:inline-block; margin:0px;">
+						<h1 class="texttext" style="font-size:18px; margin-top:30px; margin-right:8px; margin-bottom:none; text-align:right; letter-spacing: 0.5px;">18,00 €</h1>
+						
+					</div>
+				</div>
+				</div>
+				
+				
+				
+				<!-- Quatrième Bouton ARGENT -->
+				
+				
+				<div class="bar2" style="top:137px; left:455px; height:90px; width:330px; background-color:0px;">
+				<div style=" width:340px;height:120px;">
+					
+					<div style=" width:90px; height:85px; float:left;display:inline-block; margin-left:0px;">
+					<div id="circle" style="background-color:#E2E4E3; margin-left:20px; margin-top:18px;"></div></div>
+					
+					<div style=" width:155px; height:85px; display:inline-block; float:left; margin-top:0px;">
+						<h1 style="font-size:22px; margin-top:18px;text-align:left; letter-spacing: 0.5px; margin-left:2px;" >Argent</h1>
+						<h1 class="texttext" style="font-size:14px; margin-top:-1px; margin-bottom:none; margin-left:2px; text-align:left; letter-spacing: 0.5px; color:#ACACAC;">Métal précieux</h1>			
+					 </div>
+					<div style="width:80px; height:85px; float:left;display:inline-block; margin:0px;">
+						<h1 class="texttext" style="font-size:18px; margin-top:30px; margin-right:8px; margin-bottom:none; text-align:right; letter-spacing: 0.5px;">68,00 €</h1>
+						
+					</div>
+				</div>
+				</div>
+				
+				
+				<!-- Cinquième Bouton Or 14K -->
+				
+				
+				<div class="bar2" style="top:270px; left:55px; height:90px; width:330px; background-color:0px;">
+				<div style=" width:340px;height:120px;">
+					
+					<div style=" width:90px; height:85px; float:left;display:inline-block; margin-left:0px;">
+					<div id="circle" style="background-color:#E7D7C4; margin-left:20px; margin-top:18px;"></div></div>
+					
+					<div style=" width:155px; height:85px; display:inline-block; float:left; margin-top:0px;">
+						<h1 style="font-size:22px; margin-top:18px;text-align:left; letter-spacing: 0.5px; margin-left:2px;" >Or 14K</h1>
+						<h1 class="texttext" style="font-size:14px; margin-top:-1px; margin-bottom:none; margin-left:2px; text-align:left; letter-spacing: 0.5px; color:#ACACAC;">Métal précieux</h1>			
+					 </div>
+					<div style="width:80px; height:85px; float:left;display:inline-block; margin:0px;">
+						<h1 class="texttext" style="font-size:18px; margin-top:30px; margin-right:8px; margin-bottom:none; text-align:right; letter-spacing: 0.5px;">188,00 €</h1>
+						
+					</div>
+				</div>
+				</div>
+				
+				
+				
+				<!-- Sixième Bouton Or 18K -->
+				
+				
+				<div class="bar2" style="top:270px; left:455px; height:90px; width:330px; background-color:0px;">
+				<div style=" width:340px;height:120px;">
+					
+					<div style=" width:90px; height:85px; float:left;display:inline-block; margin-left:0px;">
+					<div id="circle" style="background-color:#E7D7B1; margin-left:20px; margin-top:18px;"></div></div>
+					
+					<div style=" width:155px; height:85px; display:inline-block; float:left; margin-top:0px;">
+						<h1 style="font-size:22px; margin-top:18px;text-align:left; letter-spacing: 0.5px; margin-left:2px;" >Or 18K</h1>
+						<h1 class="texttext" style="font-size:14px; margin-top:-1px; margin-bottom:none; margin-left:2px; text-align:left; letter-spacing: 0.5px; color:#ACACAC;">Métal précieux</h1>			
+					 </div>
+					<div style="width:80px; height:85px; float:left;display:inline-block; margin:0px;">
+						<h1 class="texttext" style="font-size:18px; margin-top:30px; margin-right:8px; margin-bottom:none; text-align:right; letter-spacing: 0.5px;">268,00 €</h1>
+						
+					</div>
+				</div>
+				</div>
+				
+				
+				
+				
+				
+				
+				
+				
+				<div style="text-align: center; margin: 0 auto; width:860px; float: none; position: relative; margin-top: 60px;">
+				
+				
+				
+			
+				
+				
+					<form>
+						<div class="systeme">	
+						
+							
+							<div>
+								<%= f.radio_button :materiau, 'PlaBlanc', :class => 'boutonbouton2 plablanc' %>
+								<%= f.label :materiau, "PlaBlanc", :class => 'boutonbouton', :value => "PlaBlanc" %>
+								
+							 </div>
+							
+						 	<div>
+								<%= f.radio_button :materiau, 'PlaNoir', :class => 'boutonbouton2 planoir' %>
+								<%= f.label :materiau,  "PlaNoir", :class => 'boutonbouton', :value => "PlaNoir" %>
+							</div>
+							
+							
+							<div>
+								<%= f.radio_button :materiau, 'PlaRouge', :class => 'boutonbouton2 plarouge' %>
+							    <%= f.label :materiau, "Pla Rouge", :class => 'boutonbouton', :value => "PlaRouge" %>
+						    </div>
+							
+							<div>
+						        <%= f.radio_button :materiau, 'Silver', :class => 'boutonbouton2 argent' %>
+							    <%= f.label :materiau, "Argent", :class => 'boutonbouton', :value => "Silver" %>
+						    </div>
+							
+							<div>
+							    <%= f.radio_button :materiau, 'gold14K', :class => 'boutonbouton2 or14' %>
+							    <%= f.label :materiau, "Or 14K", :class => 'boutonbouton', :value => "gold14K" %>
+						    </div>
+							
+							<div>
+							    <%= f.radio_button :materiau, 'gold18k', :class => 'boutonbouton2 or18' %>
+							    <%= f.label :materiau, "Or 18K", :class => 'boutonbouton', :value => "gold18k" %>
+						    </div>
+						
+							
+						
+						</div>
+						
+				
+					
+				
+				</div>
+			
+			</end>
+			
+		</div>
+	</div>
+			
+			
+			
+			
+		<div class="quality">
+			<div style="text-align: center; margin: 0 auto; width:860px; position: relative; margin-top: 60px;">
+				<div style="margin: 0 auto; width: 22%; margin-top: 150px; text-align: center; max-width:90px;">
+				  <div id="qualite"><%= image_tag("logoquality.svg", :alt => "images") %></div>
+			  </div>
+			  <div>
+				<h4 style="text-align:center; margin: 0 auto; float:none; clear:both;margin-top:30px; font-size: 34px; font-weight: 200;"> QUALITÉ</h4>
+			</div>
+			
+			
+			<!-- Premier Bouton 100 Microns -->
+			
+			
+			<div class="bar2" style="top:253px; left:455px; height:90px; width:330px; background-color:0px;">
+			<div style=" width:340px;height:120px;">
+				
+				<div style=" width:90px; height:85px; float:left;display:inline-block; margin-left:0px;">
+				<div id="circle" style="background-color:#E7D7B1; margin-left:20px; margin-top:18px;"></div></div>
+				
+				<div style=" width:155px; height:85px; display:inline-block; float:left; margin-top:0px;">
+					<h1 style="font-size:22px; margin-top:18px;text-align:left; letter-spacing: 0.5px; margin-left:2px;" >100 Microns</h1>
+					<h1 class="texttext" style="font-size:14px; margin-top:-1px; margin-bottom:none; margin-left:2px; text-align:left; letter-spacing: 0.5px; color:#ACACAC;">Pièces fonctionnelles</h1>			
+				 </div>
+				<div style="width:80px; height:85px; float:left;display:inline-block; margin:0px;">
+					<h1 class="texttext" style="font-size:18px; margin-top:30px; margin-right:8px; margin-bottom:none; text-align:right; letter-spacing: 0.5px;">17,00 €</h1>
+					
+				</div>
+			</div>
+			</div>
+			
+			
+			
+			
+			<!-- Deuxième Bouton 50 Microns -->
+			
+			
+			<div class="bar2" style="top:385px; left:455px; height:90px; width:330px; background-color:0px;">
+			<div style=" width:340px;height:120px;">
+				
+				<div style=" width:90px; height:85px; float:left;display:inline-block; margin-left:0px;">
+				<div id="circle" style="background-color:#E7D7B1; margin-left:20px; margin-top:18px;"></div></div>
+				
+				<div style=" width:155px; height:85px; display:inline-block; float:left; margin-top:0px;">
+					<h1 style="font-size:22px; margin-top:18px;text-align:left; letter-spacing: 0.5px; margin-left:2px;" >50 Microns</h1>
+					<h1 class="texttext" style="font-size:14px; margin-top:-1px; margin-bottom:none; margin-left:2px; text-align:left; letter-spacing: 0.5px; color:#ACACAC;">Fini Haute précision</h1>			
+				 </div>
+				<div style="width:80px; height:85px; float:left;display:inline-block; margin:0px;">
+					<h1 class="texttext" style="font-size:18px; margin-top:30px; margin-right:8px; margin-bottom:none; text-align:right; letter-spacing: 0.5px;">28,00 €</h1>
+					
+				</div>
+			</div>
+			</div>
+			
+			
+			
+			<!-- Troisième Bouton 20 Microns -->
+			
+			
+			<div class="bar2" style="top:516px; left:455px; height:90px; width:330px; background-color:0px;">
+			<div style=" width:340px;height:120px;">
+				
+				<div style=" width:90px; height:85px; float:left;display:inline-block; margin-left:0px;">
+				<div id="circle" style="background-color:#E7D7B1; margin-left:20px; margin-top:18px;"></div></div>
+				
+				<div style=" width:155px; height:85px; display:inline-block; float:left; margin-top:0px;">
+					<h1 style="font-size:22px; margin-top:18px;text-align:left; letter-spacing: 0.5px; margin-left:2px;" >20 Microns</h1>
+					<h1 class="texttext" style="font-size:14px; margin-top:-1px; margin-bottom:none; margin-left:2px; text-align:left; letter-spacing: 0.5px; color:#ACACAC;">Ultra haute précision</h1>			
+				 </div>
+				<div style="width:80px; height:85px; float:left;display:inline-block; margin:0px;">
+					<h1 class="texttext" style="font-size:18px; margin-top:30px; margin-right:8px; margin-bottom:none; text-align:right; letter-spacing: 0.5px;">42,00 €</h1>
+					
+				</div>
+			</div>
+			</div>
+			
+			
+			<div style="text-align: right; margin: 0 auto; margin-right: 0.7%; width:360px; float: none; position: relative; margin-top: 60px;">
+				
+			
+				
+				
+				
+				
+				
+				
+		
+				<div class="systeme" style="width:450px; height:450px; float:right; text-align: center;">	
+					<div>
+						<%= f.radio_button :qualite, 'Brut', :class => 'boutonbouton4 brut' %>
+						<%= f.label :qualite, "Brut", :class => 'boutonbouton3', :value => "Brut" %>
+						<div style="background-color:none; width:330px; height:90px; margin-left:60px; margin-top:20px;"></div>
+					 </div>
+					
+				 	<div>
+						<%= f.radio_button :qualite, 'Fini', :class => 'boutonbouton4 fini' %>
+						<%= f.label :qualite,  "Fini", :class => 'boutonbouton3', :value => "Fini" %>
+					</div>
+					
+					
+					<div>
+						<%= f.radio_button :qualite, 'Sublime', :class => 'boutonbouton4 sublime' %>
+					    <%= f.label :qualite, "Sublime", :class => 'boutonbouton3', :value => "Sublime" %>
+				    </div>
+				</div>
+				
+			
+			</div>
+		</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			<div class="delivery" style="margin-top:80px;">
+				
+				<div style="text-align: center; margin: 0 auto; width:860px; position: relative; margin-top: 60px;">
+				 <div style="margin: 0 auto; width: 42%; margin-top: 150px; text-align: center; max-width:110px; width:30%;">
+					<div id="livraison"> <%= image_tag("Logolivraison.svg", :alt => "images") %></div>
+				 </div>
+				<h4 style="text-align:center; margin: 0 auto; float:none; clear:both;margin-top:35px; font-size: 34px; font-weight: 200;"> LIVRAISON</h4>
+		
+				<!-- Premier Bouton 96 HEURES -->
+			
+			
+				<div class="bar2" style="top:276px; left:455px; height:900px; width:330px; background-color:0px;">
+				<div style=" width:340px;height:120px;">
+				
+					<div style=" width:90px; height:85px; float:left;display:inline-block; margin-left:0px;">
+					<h1 style="font-size:58px; margin-top:5px;text-align:left; font-weight:200; font-family:'San Francisco'; letter-spacing: 0.5px; margin-left:15px;" >96</h1></div>
+				
+					<div style=" width:155px; height:85px; display:inline-block; float:left; margin-top:0px;">
+						<h1 style="font-size:22px; margin-top:18px;text-align:left; letter-spacing: 0.5px; margin-left:2px;" >Classique</h1>
+						<h1 class="texttext" style="font-size:14px; margin-top:-1px; margin-bottom:none; margin-left:2px; text-align:left; letter-spacing: 0.5px; color:#ACACAC;">4 jours ouvrés</h1>			
+					 </div>
+					<div style="width:80px; height:85px; float:left;display:inline-block; margin:0px;">
+						<h1 class="texttext" style="font-size:18px; margin-top:30px; margin-right:8px; margin-bottom:none; text-align:right; letter-spacing: 0.5px;">28,00 €</h1>
+					
+					</div>
+				</div>
+				</div>
+				
+				
+				<!-- Deuxième Bouton 48 HEURES -->
+			
+			
+				<div class="bar2" style="top:407px; left:455px; height:90px; width:330px; background-color:0px;">
+				<div style=" width:340px;height:120px;">
+				
+					<div style=" width:90px; height:85px; float:left;display:inline-block; margin-left:0px;">
+					<h1 style="font-size:58px; margin-top:5px;text-align:left; font-weight:200; font-family:'San Francisco'; letter-spacing: 0.5px; margin-left:15px;" >48</h1></div>
+				
+					<div style=" width:155px; height:85px; display:inline-block; float:left; margin-top:0px;">
+						<h1 style="font-size:22px; margin-top:18px;text-align:left; letter-spacing: 0.5px; margin-left:2px;" >Prioritaire</h1>
+						<h1 class="texttext" style="font-size:14px; margin-top:-1px; margin-bottom:none; margin-left:2px; text-align:left; letter-spacing: 0.5px; color:#ACACAC;">2 jours ouvrés</h1>			
+					 </div>
+					<div style="width:80px; height:85px; float:left;display:inline-block; margin:0px;">
+						<h1 class="texttext" style="font-size:18px; margin-top:30px; margin-right:8px; margin-bottom:none; text-align:right; letter-spacing: 0.5px;">32,00 €</h1>
+					
+					</div>
+				</div>
+				</div>
+				
+				
+				<!-- Troisième Bouton 24 HEURES -->
+			
+			
+				<div class="bar2" style="top:541px; left:455px; height:90px; width:330px; background-color:0px;">
+				<div style=" width:340px;height:120px;">
+				
+					<div style=" width:90px; height:85px; float:left;display:inline-block; margin-left:0px;">
+					<h1 style="font-size:58px; margin-top:5px;text-align:left; font-weight:200; font-family:'San Francisco'; letter-spacing: 0.5px; margin-left:15px;" >24</h1></div>
+				
+					<div style=" width:155px; height:85px; display:inline-block; float:left; margin-top:0px;">
+						<h1 style="font-size:22px; margin-top:18px;text-align:left; letter-spacing: 0.5px; margin-left:2px;" >Express</h1>
+						<h1 class="texttext" style="font-size:14px; margin-top:-1px; margin-bottom:none; margin-left:2px; text-align:left; letter-spacing: 0.5px; color:#ACACAC;">Lendemain dès 12h</h1>			
+					 </div>
+					<div style="width:80px; height:85px; float:left;display:inline-block; margin:0px;">
+						<h1 class="texttext" style="font-size:18px; margin-top:30px; margin-right:8px; margin-bottom:none; text-align:right; letter-spacing: 0.5px;">46,00 €</h1>
+					
+					</div>
+				</div>
+				</div>
+				
+		
+			<div style="text-align: right; margin: 0 auto;  margin-right: 0.7%; width:450px; float: none; position: relative; margin-top: 80px; margin-bottom:1050px;">
+		
+			
+			
+			
+			
+				<div class="systeme">	
+					<div>
+						<%= f.radio_button :livraison, '96h', :class => 'boutonbouton5 96h' %>
+						<%= f.label :livraison, "96h", :class => 'boutonbouton', :value => "96h" %>
+					 </div>
+					
+				 	<div>
+						<%= f.radio_button :livraison, '48h', :class => 'boutonbouton5 48h' %>
+						<%= f.label :livraison,  "48h", :class => 'boutonbouton', :value => "48h" %>
+					</div>
+					
+					
+					<div>
+						<%= f.radio_button :livraison, '24h', :class => 'boutonbouton5 24h' %>
+					    <%= f.label :livraison, "24h", :class => 'boutonbouton', :value => "24h" %>
+				    </div>
+				</div>
+				
+			</form>
+		</div>
+		</div>
+	</div>
+		</div>
+
+
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('.scrollTo').click( function() { // Au clic sur un élément
+					var page = $(this).attr('href'); // Page cible
+					var speed = 1850; // Durée de l'animation (en ms)
+					$('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+					return false;
+				});
+			});
+		</script>
+
+	
+	
+	<script>
+		$(".boutonbouton2").on("change", function(){
+		  $("#materiautexteblanc").toggle($(this).hasClass("boutonbouton2 plablanc"));
+		});
+		
+		$(".boutonbouton2").on("change", function(){
+		  $("#materiautexterouge").toggle($(this).hasClass("boutonbouton2 plarouge"));
+		});
+		
+		$(".boutonbouton2").on("change", function(){
+		  $("#materiautextenoir").toggle($(this).hasClass("boutonbouton2 planoir"));
+		});
+		
+		$(".boutonbouton2").on("change", function(){
+		  $("#materiautexteargent").toggle($(this).hasClass("boutonbouton2 argent"));
+		});
+		
+		
+		$(".boutonbouton2").on("change", function(){
+		  $("#materiautexteor14").toggle($(this).hasClass("boutonbouton2 or14"));
+		});
+		
+		$(".boutonbouton2").on("change", function(){
+		  $("#materiautexteor18").toggle($(this).hasClass("boutonbouton2 or18"));
+		});
+		
+		
+		$(".boutonbouton4").on("change", function(){
+		  $("#qualitebrut").toggle($(this).hasClass("boutonbouton4 brut"));
+		});
+		
+		
+		$(".boutonbouton4").on("change", function(){
+		  $("#qualitefini").toggle($(this).hasClass("boutonbouton4 fini"));
+		});
+		
+		
+		
+	
+		
+		
+		
+		
+		
+	
+		
+		
+
+		
+		
+		
+		
+		$(".boutonbouton4").on("change", function(){
+		  $("#qualitesublime").toggle($(this).hasClass("boutonbouton4 sublime"));
+		});
+		
+		
+		
+		
+		$(".boutonbouton5").on("change", function(){
+		  $("#livraison96h").toggle($(this).hasClass("boutonbouton5 96h"));
+		});
+		
+		$(".boutonbouton5").on("change", function(){
+		  $("#livraison48h").toggle($(this).hasClass("boutonbouton5 48h"));
+		});
+		
+		$(".boutonbouton5").on("change", function(){
+		  $("#livraison24h").toggle($(this).hasClass("boutonbouton5 24h"));
+		});
+		
+		
+		
+		
+		
+		
+		</script>
+	
+
+		<script type="text/javascript">
+		$(document).ready(function() {
+		   $('#nav').localScroll({duration:800});
+		});
+		</script>
+	
+	
+	
+	
+	
+		
+	
+	
+	
+<script type="text/javascript" src="monscript.js"></script>
+<% end %>
+</body>
+

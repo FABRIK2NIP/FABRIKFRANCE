@@ -1,0 +1,989 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 3072 3052" style="enable-background:new 0 0 3072 3052;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#D1D3D4;}
+	.st1{fill:none;stroke:#000000;stroke-width:230;stroke-miterlimit:10;stroke-dasharray:11.9871,11.9871;}
+	.st2{fill:#FFFFFF;stroke:#000000;stroke-width:40;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#000000;stroke-width:40;stroke-miterlimit:10;}
+	.st4{fill:#FFFFFF;}
+	.st5{fill:none;stroke:#000000;stroke-width:11;stroke-miterlimit:10;}
+	.st6{fill:none;stroke:#000000;stroke-width:12;stroke-miterlimit:10;}
+	.st7{fill:none;stroke:#000000;stroke-width:70;stroke-miterlimit:10;}
+	.st8{fill:none;stroke:#000000;stroke-width:20;stroke-miterlimit:10;}
+	.st9{fill:none;stroke:#000000;stroke-width:14;stroke-miterlimit:10;}
+	.st10{fill:#FFFFFF;stroke:#000000;stroke-width:12;stroke-miterlimit:10;}
+	.st11{fill:#FFFFFF;stroke:#000000;stroke-width:10;stroke-miterlimit:10;}
+	.st12{fill:#FFFFFF;stroke:#FFFFFF;stroke-width:10;stroke-miterlimit:10;}
+	.st13{fill:#FFF200;stroke:#FFF200;stroke-width:19;stroke-miterlimit:10;}
+	.st14{fill:#FFFFFF;stroke:#808285;stroke-width:12;stroke-miterlimit:10;}
+	.st15{fill:#FFFFFF;stroke:#C49A6C;stroke-width:19;stroke-miterlimit:10;}
+	.st16{fill:#FFFFFF;stroke:#00A651;stroke-width:19;stroke-miterlimit:10;}
+	
+		
+		.st45{fill:none;stroke:#000000;stroke-width:14;stroke-miterlimit:10;
+				stroke-dasharray: 4000;
+				stroke-dashoffset:0;
+				-webkit-animation: dash8 2.5s linear forwards;
+				-o-animation: dash8 2.5s linear forwards;
+				-moz-animation: dash8 2.5s linear forwards;
+				animation: dash8 2.5s linear forwards;
+				animation-delay: 71s;
+				
+					-webkit-animation-name: dash8 ;
+			-webkit-animation-duration: 2.5s;
+			-webkit-animation-iteration-count: 1;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay:71s;
+		
+		}
+	
+		.st44 {fill:#FFFFFF;
+	webkit-animation-name: fade10 0.5s;
+  			-o-animation: fade10 0.5s linear forwards;
+			-moz-animation: fade10 0.5s linear forwards;
+			animation: fade10 linear 0.5s forwards;
+			animation-delay: 71s;
+			
+				-webkit-animation-name: fade10 ;
+			-webkit-animation-duration: 0.5s;
+			-webkit-animation-iteration-count: 1;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay:71s;
+	
+	}
+	
+	
+		.st43 {fill:#FFFFFF;
+	webkit-animation-name: fade9 0.5s;
+  			-o-animation: fade9 0.5s linear forwards;
+			-moz-animation: fade9 0.5s linear forwards;
+			animation: fade9 linear 0.5s forwards;
+			animation-delay: 69s;
+			
+				-webkit-animation-name: fade9 ;
+			-webkit-animation-duration: 0.5s;
+			-webkit-animation-iteration-count: 1;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay:69s;
+	
+	}
+	
+	
+	.st42 {fill:#FFFFFF;
+	webkit-animation-name: arrive2 1s;
+  			-o-animation: arrive2 1s linear forwards;
+			-moz-animation: arrive2 1s linear forwards;
+			animation: arrive2 linear 1s forwards;
+			animation-delay: 46s;
+			
+				-webkit-animation-name: arrive2 ;
+			-webkit-animation-duration: 1s;
+			-webkit-animation-iteration-count: 1;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay:46s;
+	
+	}
+	
+	
+	.st41{fill:none;stroke:#000000;stroke-width:20;stroke-miterlimit:10;}
+	
+	.st40 {fill:#FFFFFF;
+	webkit-animation-name: fade8 0.5s;
+  			-o-animation: fade8 0.5s linear forwards;
+			-moz-animation: fade8 0.5s linear forwards;
+			animation: fade8 linear 0.5s forwards;
+			animation-delay: 46s;
+			
+				-webkit-animation-name: fade8 ;
+			-webkit-animation-duration: 0.5s;
+			-webkit-animation-iteration-count: 1;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay:46s;
+	
+	}
+	
+	
+	.st39 {
+	webkit-animation-name: fade7 0.5s;
+  			-o-animation: fade7 0.5s linear forwards;
+			-moz-animation: fade7 0.5s linear forwards;
+			animation: fade7 linear 0.5s forwards;
+			animation-delay: 45s;
+			
+				-webkit-animation-name: fade7 ;
+			-webkit-animation-duration: 0.5s;
+			-webkit-animation-iteration-count: 1;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay:45s;
+	
+	}
+	
+	.st38 {
+	 -webkit-animation-name: arrive 2s;
+  			-o-animation: arrive 2s linear forwards;
+			-moz-animation: arrive 2s linear forwards;
+			animation: arrive linear 2s forwards;
+			animation-delay: 31s;
+			
+				-webkit-animation-name: arrive ;
+			-webkit-animation-duration: 2s;
+			-webkit-animation-iteration-count: 1;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay:31s;
+	
+	}
+	
+	
+	.st37{fill:none;stroke:#000000;stroke-width:14;stroke-miterlimit:10;
+			stroke-dasharray: 250;
+			stroke-dashoffset:0;
+			-webkit-animation: dash7 16s linear forwards;
+			-o-animation: dash7 16s linear forwards;
+			-moz-animation: dash7 16s linear forwards;
+			animation: dash7 16s linear forwards;
+			animation-delay: 28.9s;
+			
+				-webkit-animation-name: dash7 ;
+			-webkit-animation-duration: 16s;
+			-webkit-animation-iteration-count: 1;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay:28.9s;
+	
+	}
+
+	
+	.st36{fill:none;stroke:#000000;stroke-width:14;stroke-miterlimit:10;
+			stroke-dasharray: 600;
+			stroke-dashoffset:0;
+			-webkit-animation: dash6 18s linear forwards;
+			-o-animation: dash6 18s linear forwards;
+			-moz-animation: dash6 18s linear forwards;
+			animation: dash6 18s linear forwards;
+			animation-delay: 30.9s;
+			
+				-webkit-animation-name: dash6 ;
+			-webkit-animation-duration: 18s;
+			-webkit-animation-iteration-count: 1;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay:30.9s;
+	
+	}
+	
+	.st35{fill:none;stroke:#000000;stroke-width:14;stroke-miterlimit:10;
+			stroke-dasharray: 500;
+			stroke-dashoffset:0;
+			-webkit-animation: dash5 17s linear forwards;
+			-o-animation: dash5 17s linear forwards;
+			-moz-animation: dash5 17s linear forwards;
+			animation: dash5 17s linear forwards;
+			animation-delay: 30.5s;
+			
+				-webkit-animation-name: dash5 ;
+			-webkit-animation-duration: 17s;
+			-webkit-animation-iteration-count: 1;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay:30.5s;
+	
+	}
+	
+	
+	.st34{fill:none;stroke:#000000;stroke-width:14;stroke-miterlimit:10;
+			stroke-dasharray: 400;
+			stroke-dashoffset:0;
+			-webkit-animation: dash4 15s linear forwards;
+			-o-animation: dash4 15s linear forwards;
+			-moz-animation: dash4 15s linear forwards;
+			animation: dash4 15s linear forwards;
+			animation-delay: 29s;
+			
+				-webkit-animation-name: dash4 ;
+			-webkit-animation-duration: 15s;
+			-webkit-animation-iteration-count: 1;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay:29s;
+	
+	}
+	
+		.st33{fill:#FFFFFF;
+		 -webkit-animation-name: fade6 0.5s;
+  			-o-animation: fade6 0.5s linear forwards;
+			-moz-animation: fade6 0.5s linear forwards;
+			animation: fade6 linear 0.5s forwards;
+			animation-delay: 31s;
+			
+				-webkit-animation-name: fade6 ;
+			-webkit-animation-duration: 0.5s;
+			-webkit-animation-iteration-count: 1;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay:31s;
+}
+		.st32{
+			 -webkit-animation-name: fade5 0.5s;
+  			-o-animation: fade5 0.5s linear forwards;
+			-moz-animation: fade5 0.5s linear forwards;
+			animation: fade5 linear 0.5s forwards;
+			animation-delay: 30s;
+			
+				-webkit-animation-name: fade5 ;
+			-webkit-animation-duration: 0.5s;
+			-webkit-animation-iteration-count: 1;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay:30s;
+	}
+	.st31{fill:none;stroke:#000000;stroke-width:14;stroke-miterlimit:10;}
+				
+	
+	.st30{fill:blue;stroke:white; stroke-width: 49;
+			 -webkit-animation-name: fade4 0.5s;
+  			-o-animation: fade4 0.5s linear forwards;
+			-moz-animation: fade4 0.5s linear forwards;
+			animation: fade4 linear 0.5s forwards;
+			animation-delay: 23.3s;
+			
+				-webkit-animation-name: fade4 ;
+			-webkit-animation-duration: 0.5s;
+			-webkit-animation-iteration-count: 1;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay:23.3s;
+	   
+	
+	}
+	.st29{fill:none;stroke:#000000;stroke-width:19;stroke-miterlimit:10;
+				stroke-dasharray: 1000;
+			stroke-dashoffset:0;
+			-webkit-animation: dash3 1.2s linear forwards;
+			-o-animation: dash3 1.2s linear forwards;
+			-moz-animation: dash3 1.2s linear forwards;
+			animation: dash3 1.2s linear forwards;
+			animation-delay: 22.4s;
+			
+				-webkit-animation-name: dash3 ;
+			-webkit-animation-duration: 1.2s;
+			-webkit-animation-iteration-count: 1;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay:22.4s;
+	
+	}
+	
+	.st28{fill:blue;stroke:white;stroke-width: 40;
+			  -webkit-animation-name: fade3 0s ;
+  			-o-animation: fade3 0s linear forwards;
+			-moz-animation: fade3 0s linear forwards;
+			animation: fade3 linear 0s forwards;
+			animation-delay: 22.4s;
+			
+				-webkit-animation-name: fade ;
+			-webkit-animation-duration: 0s;
+			-webkit-animation-iteration-count: 1;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay:22.4s;
+	}
+	
+	.st27{fill:none;stroke:#000000;stroke-width:19;stroke-miterlimit:10;
+			stroke-dasharray: 1000;
+			stroke-dashoffset:0;
+			-webkit-animation: dash3 1s linear forwards;
+			-o-animation: dash3 1s linear forwards;
+			-moz-animation: dash3 1s linear forwards;
+			animation: dash3 1s linear forwards;
+			animation-delay: 21.7s;
+			
+				-webkit-animation-name: dash3 ;
+			-webkit-animation-duration: 1s;
+			-webkit-animation-iteration-count: 1;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay:21.7s;
+	}
+	
+	.st26{fill:none;stroke:white;stroke-width: 40;
+				  -webkit-animation-name: fade3 0s ;
+  			-o-animation: fade3 0s linear forwards;
+			-moz-animation: fade3 0s linear forwards;
+			animation: fade3 linear 0s forwards;
+			animation-delay: 21.7s;
+			
+				-webkit-animation-name: fade3 ;
+			-webkit-animation-duration: 0s;
+			-webkit-animation-iteration-count: 1;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay:21.7s;
+	}
+	
+	.st25{fill:none; stroke:#000000;stroke-width:19;stroke-miterlimit:10;
+		stroke-dasharray: 1000;
+			stroke-dashoffset:0;
+			-webkit-animation: dash3 1s linear forwards;
+			-o-animation: dash3 1s linear forwards;
+			-moz-animation: dash3 1s linear forwards;
+			animation: dash3 1s linear forwards;
+			animation-delay: 21s;
+			
+				-webkit-animation-name: dash3 ;
+			-webkit-animation-duration: 1s;
+			-webkit-animation-iteration-count: 1;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay:21s;
+}
+		
+	
+	.st17{stroke:#000000;stroke-miterlimit:10;}
+	.st20{
+			 -webkit-animation-name: fade 0.5s ;
+  			-o-animation: fade 0.5s linear forwards;
+			-moz-animation: fade 0.5s linear forwards;
+			animation: fade linear 0.5s forwards;
+			animation-delay: 2s;
+			
+			-webkit-animation-name: fade ;
+			-webkit-animation-duration: 0.5s;
+			-webkit-animation-iteration-count: 1;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay:2s;
+		}
+			
+	.st21{fill:#FFFFFF;
+			-webkit-animation-name: fade 0.5s ;
+  			-o-animation: fade 0.5s linear forwards;
+			-moz-animation: fade 0.5s linear forwards;
+			animation: fade linear 0.5s forwards;
+			animation-delay: 2.5s;
+			
+				-webkit-animation-name: fade ;
+			-webkit-animation-duration: 0.5s;
+			-webkit-animation-iteration-count: 1;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay:2.5s;
+	}
+	.st22{fill:none;stroke:#000000;stroke-width:15;stroke-miterlimit:10;
+		stroke-dasharray: 50;
+			stroke-dashoffset:0;
+			-webkit-animation: dash 25s linear forwards;
+			-o-animation: dash 25s linear forwards;
+			-moz-animation: dash 25s linear forwards;
+			animation: dash 25s linear forwards;
+			animation-delay: 2.5s;
+			
+				-webkit-animation-name: dash ;
+			-webkit-animation-duration: 25s;
+			-webkit-animation-iteration-count: 1;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay:2.5s;
+	}
+	
+	.st23{
+			-webkit-animation-name: fade 0.5s ;
+  			-o-animation: fade 0.5s linear forwards;
+			-moz-animation: fade 0.5s linear forwards;
+			animation: fade linear 0.5s forwards;
+			animation-delay: 20s;	
+			
+				-webkit-animation-name: fade ;
+			-webkit-animation-duration: 0.5s;
+			-webkit-animation-iteration-count: 1;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay:20s;
+	}
+
+
+	.st24{	 fill:#FFFFFF;
+			-webkit-animation-name: fade 0.5s ;
+  			-o-animation: fade 0.5s linear forwards;
+			-moz-animation: fade 0.5s linear forwards;
+			animation: fade linear 0.5s forwards;
+			animation-delay: 21s;	
+			
+				-webkit-animation-name: fade ;
+			-webkit-animation-duration: 0.5s;
+			-webkit-animation-iteration-count: 1;
+			-webkit-animation-timing-function: linear;
+			-webkit-animation-fill-mode: forwards;
+			-webkit-animation-delay:21s;
+	}
+
+
+	
+
+		
+		@-webkit-keyframes fade {
+		 from {
+		    opacity: 1;
+		  }
+		
+		  to {
+		    opacity: 0;
+		  }
+		}
+
+
+
+		@-webkit-keyframes fade2 {
+		 from {
+		    opacity: 1;
+		  }
+		
+		  to {
+		    opacity: 0;
+		  }
+		
+		}
+		
+		@-webkit-keyframes fade3 {
+		 from {
+		    opacity: 1;
+		  }
+		
+		  to {
+		    opacity: 0;
+		  }
+		}
+		
+		@-webkit-keyframes fade4 {
+		 from {
+		    opacity: 1;
+		  }
+		
+		  to {
+		    opacity: 0;
+		  }
+		}
+
+
+		@-webkit-keyframes fade5 {
+		 from {
+		    opacity: 1;
+		  }
+		
+		  to {
+		    opacity: 0;
+		  }
+		}
+		
+		
+		
+		@-webkit-keyframes fade6 {
+		 from {
+		    opacity: 1;
+		  }
+		
+		  to {
+		    opacity: 0;
+		  }
+		}
+		
+		
+		@-webkit-keyframes fade7 {
+		 from {
+		    opacity: 1;
+		  }
+		
+		  to {
+		    opacity: 0;
+		  }
+		}
+		
+		
+			
+		@-webkit-keyframes fade8 {
+		 from {
+		    opacity: 1;
+		  }
+		
+		  to {
+		    opacity: 0;
+		  }
+		}
+
+	
+	@-webkit-keyframes fade9 {
+		 from {
+		    opacity: 1;
+		  }
+		
+		  to {
+		    opacity: 0;
+		  }
+		}
+	
+	@-webkit-keyframes fade10 {
+		 from {
+		    opacity: 1;
+		  }
+		
+		  to {
+		    opacity: 0;
+		  }
+		}	
+
+
+		@keyframes fade {
+		 from {
+		    opacity: 1;
+		  }
+		
+		  to {
+		    opacity: 0;
+		  }
+		}
+
+
+
+		@keyframes fade2 {
+		 from {
+		    opacity: 1;
+		  }
+		
+		  to {
+		    opacity: 0;
+		  }
+		
+		}
+		
+		@keyframes fade3 {
+		 from {
+		    opacity: 1;
+		  }
+		
+		  to {
+		    opacity: 0;
+		  }
+		}
+		
+		@keyframes fade4 {
+		 from {
+		    opacity: 1;
+		  }
+		
+		  to {
+		    opacity: 0;
+		  }
+		}
+
+
+		@keyframes fade5 {
+		 from {
+		    opacity: 1;
+		  }
+		
+		  to {
+		    opacity: 0;
+		  }
+		}
+		
+		
+		
+		@keyframes fade6 {
+		 from {
+		    opacity: 1;
+		  }
+		
+		  to {
+		    opacity: 0;
+		  }
+		}
+		
+		
+		@keyframes fade7 {
+		 from {
+		    opacity: 1;
+		  }
+		
+		  to {
+		    opacity: 0;
+		  }
+		}
+		
+		
+			
+		@keyframes fade8 {
+		 from {
+		    opacity: 1;
+		  }
+		
+		  to {
+		    opacity: 0;
+		  }
+		}
+
+	
+	@keyframes fade9 {
+		 from {
+		    opacity: 1;
+		  }
+		
+		  to {
+		    opacity: 0;
+		  }
+		}
+	
+	@keyframes fade10 {
+		 from {
+		    opacity: 1;
+		  }
+		
+		  to {
+		    opacity: 0;
+		  }
+		}
+
+
+@-webkit-keyframes dash {
+			from {
+				stroke-dashoffset: 10000;
+			}
+			to {
+				stroke-dashoffset: 0;
+			}
+		
+		
+		}
+		
+		@keyframes dash {
+			from {
+				stroke-dashoffset: 10000;
+			}
+			to {
+				stroke-dashoffset: 0;
+			}
+		
+		
+		}
+
+		
+				@-webkit-keyframes dash3 {
+			from {
+				stroke-dashoffset: 1000;
+			}
+			to {
+				stroke-dashoffset: 0;
+			}
+		}
+
+
+				@keyframes dash3 {
+			from {
+				stroke-dashoffset: 1000;
+			}
+			to {
+				stroke-dashoffset: 0;
+			}
+		}
+	
+		@-webkit-keyframes dash4 {
+			from {
+				stroke-dashoffset: 10000;
+			}
+			to {
+				stroke-dashoffset: 0;
+			}
+		}
+		
+		@keyframes dash4 {
+			from {
+				stroke-dashoffset: 10000;
+			}
+			to {
+				stroke-dashoffset: 0;
+			}
+		}
+		
+		@-webkit-keyframes dash5 {
+			from {
+				stroke-dashoffset: 10000;
+			}
+			to {
+				stroke-dashoffset: 0;
+			}
+		}
+		
+		@keyframes dash5 {
+			from {
+				stroke-dashoffset: 10000;
+			}
+			to {
+				stroke-dashoffset: 0;
+			}
+		}
+		
+		@-webkit-keyframes dash6 {
+			from {
+				stroke-dashoffset: 10000;
+			}
+			to {
+				stroke-dashoffset: 0;
+			}
+		}
+		
+		@keyframes dash6 {
+			from {
+				stroke-dashoffset: 10000;
+			}
+			to {
+				stroke-dashoffset: 0;
+			}
+		}
+		
+		@-webkit-keyframes dash7 {
+			from {
+				stroke-dashoffset: 10000;
+			}
+			to {
+				stroke-dashoffset: 0;
+			}
+		}
+		
+		@keyframes dash7 {
+			from {
+				stroke-dashoffset: 10000;
+			}
+			to {
+				stroke-dashoffset: 0;
+			}
+		}
+		
+			@-webkit-keyframes dash8 {
+			from {
+				stroke-dashoffset: 4000;
+			}
+			to {
+				stroke-dashoffset: 0;
+			}
+		}
+		
+		@keyframes dash8 {
+			from {
+				stroke-dashoffset: 4000;
+			}
+			to {
+				stroke-dashoffset: 0;
+			}
+		}
+	
+		@-webkit-keyframes arrive {
+			 from {
+			    opacity: 0;
+			  }
+			
+			  to {
+			    opacity: 1;
+			  }
+		}
+		
+			@keyframes arrive {
+			 from {
+			    opacity: 0;
+			  }
+			
+			  to {
+			    opacity: 1;
+			  }
+		}
+		
+		
+			@-webkit-keyframes arrive2 {
+			 from {
+			    opacity: 0;
+			  }
+			
+			  to {
+			    opacity: 1;
+			  }
+		}
+		
+		@keyframes arrive2 {
+			 from {
+			    opacity: 0;
+			  }
+			
+			  to {
+			    opacity: 1;
+			  }
+		}
+				
+	
+</style>
+<ellipse class="st0" cx="1530.267" cy="1534.191" rx="1500.532" ry="1500.545"/>
+<g>
+	<ellipse class="st1" cx="1544.747" cy="1530.226" rx="1377.274" ry="1377.286">
+	<animateTransform attributeName="transform" 
+		 attributeType="XML" 
+		 type="rotate" 
+		 from="0 1540 1540" 
+		 to="360 1540 1540" 
+		 dur="40s" 
+		 repeatCount="indefinite"  />
+	</ellipse>
+</g>
+<ellipse class="st2" cx="1546.266" cy="1531.226" rx="1257.281" ry="1257.292"/>
+<ellipse class="st3" cx="1545.266" cy="1531.191" rx="1488.531" ry="1488.544"/>
+<ellipse class="st4" cx="1541.747" cy="1526.226" rx="1131.27" ry="1131.279"/>
+<polygon class="st45" points="1824.196,1265.12 1460.598,1630.232 1289.765,1459.399 1195.122,1554.042 1462.979,1821.899 
+	1920.717,1364.161 "/>
+<ellipse class="st5" cx="1541.747" cy="1526.226" rx="643.648" ry="646.589"/>
+<ellipse class="st44" cx="1542.747" cy="1526.226" rx="1131.27" ry="1131.279"/>
+
+
+/* EMPLACEMENT DES DEUX CIRCLES TOUPIE */
+<g class="st43">
+<ellipse class="st41" cx="1542.746" cy="1535.864" rx="861.443" ry="861.451"/>
+<g class="st42">
+<g >
+	<circle class="st6" cx="1529.596" cy="1968.281" r="432.355"/>
+	<circle class="st6" cx="1971.369" cy="1535.922" r="432.355"/>
+	<circle class="st6" cx="1546.014" cy="1103.809" r="432.355"/>
+	<circle class="st6" cx="1113.658" cy="1528.168" r="432.355"/>
+	<circle class="st6" cx="1834.577" cy="1851.191" r="432.355"/>
+	<circle class="st6" cx="1853.177" cy="1233.176" r="432.355"/>
+	<circle class="st6" cx="1236.269" cy="1225.717" r="432.355"/>
+	<circle class="st6" cx="1234.316" cy="1837.16" r="432.355"/>
+	<animateTransform attributeName="transform" 
+		 attributeType="XML" 
+		 type="rotate" 
+		 from="0 1540 1540" 
+		 to="-360 1540 1540" 
+		 dur="16s" 
+		 repeatCount="indefinite"  />
+</g>
+<g>
+	<circle class="st6" cx="1939.114" cy="1709.079" r="432.355"/>
+	<circle class="st6" cx="1702.316" cy="1138.093" r="432.355"/>
+	<circle class="st6" cx="1142.904" cy="1371.988" r="432.355"/>
+	<circle class="st6" cx="1375.784" cy="1931.254" r="432.355"/>
+	<circle class="st6" cx="1943.99" cy="1382.429" r="432.355"/>
+	<circle class="st6" cx="1377.331" cy="1135.073" r="432.355"/>
+	<circle class="st6" cx="1140.726" cy="1704.852" r="432.355"/>
+	<circle class="st6" cx="1707.484" cy="1934.312" r="432.355"/>
+	<animateTransform attributeName="transform" 
+		 attributeType="XML" 
+		 type="rotate" 
+		 from="0 1540 1540" 
+		 to="360 1540 1540" 
+		 dur="16s" 
+		 repeatCount="indefinite"  />
+		 
+</g>
+</g>
+</g>
+
+
+<ellipse class="st40" cx="1544.014" cy="1521.226" rx="1131.27" ry="1131.279"/>
+
+<g class="st39">
+	<path class="st6" d="M2008.311,1168.013v913.847c0,0,1.441,36.756-35.314,36.756c-36.756,0-874.209,0-874.209,0
+		s-28.828,1.441-29.188-29.188c-0.36-30.63,0-1118.887,0-1118.887s-0.36-32.431,34.233-32.431s676.737,0,676.737,0L2008.311,1168.013
+		z"/>
+	<path class="st6" d="M1779.128,940.993v203.992c0,0-0.737,24.658,24.694,25.032c25.432,0.374,204.558,0,204.558,0"/>
+
+	<g class="st38">
+		<path class="st7" d="M2101.74,2184.617l-121.8-125.8c16.923-14.66,62.878-91.382,16.107-171.485s-117.197-77.4-130.637-77.4
+			c-13.44,0-86.554,5.899-128.486,68.798c-41.933,62.899-18.816,120.96-14.515,133.863c4.301,12.902,16.666,35.482,28.493,48.384
+			c11.827,12.903,27.418,25.267,43.008,33.869c15.59,8.602,41.933,13.978,51.61,15.59c9.677,1.613,41.395,0,51.072-2.688
+			c9.677-2.688,18.816-4.301,27.955-9.139s40.666-20.139,40.666-20.139l121.41,121.41L2101.74,2184.617z"/>
+		<circle class="st8" cx="1864.303" cy="1962.039" r="116.784"/>
+	</g>
+
+	<line class="st37" x1="1214.099" y1="1254.49" x2="1606.862" y2="1254.49"/>
+	<line class="st36" x1="1214.099" y1="1459.49" x2="1842.657" y2="1459.49"/>
+	<line class="st35" x1="1214.099" y1="1682.229" x2="1840.514" y2="1682.229"/>
+	<line class="st34" x1="1214.099" y1="1891.49" x2="1736.923" y2="1891.49"/>
+</g>
+
+<ellipse class="st33" cx="1543.014" cy="1520.807" rx="1131.27" ry="1131.279"/>
+
+
+
+
+<g class="st32">
+<path class="st9" d="M1837.066,999.609c0,0-562.217,310.322-597.272,329.671"/>
+<path class="st30" d="M1862.997,986.407c0,0-616.075,343.971-654.489,365.419"/>
+
+<line class="st29" x1="954.875" y1="1168.627" x2="1542.971" y2="1504.013"/>
+<line class="st29" x1="1541.583" y1="2183.937" x2="1541.423" y2="1499.394"/>
+<line class="st29" x1="2131.423" y1="1169.246" x2="1541.066" y2="1503.388"/>
+
+<line class="st28" x1="1540.583" y1="2209.886" x2="1540.423" y2="1498.394"/>
+<line class="st28" x1="908.045" y1="1145.301" x2="1548.971" y2="1508.208"/>
+<line class="st28" x1="2159.982" y1="1150.394" x2="1524.066" y2="1513.388"/>
+
+
+<line class="st27" x1="2131.665" y1="1844.585" x2="1538.923" y2="2185.886"/>
+<line class="st27" x1="952.181" y1="1165.585" x2="952.181" y2="1847.228"/>
+<line class="st27" x1="1538.423" y1="832.87" x2="2131.423" y2="1169.944"/>
+
+
+<line class="st26" x1="2169.981" y1="1819.803" x2="1511.514" y2="2203.783"/>
+<line class="st26" x1="950.181" y1="1132.834" x2="950.181" y2="1878.3"/>
+<line class="st26" x1="1522.514" y1="825.728" x2="2171.982" y2="1193.117"/>
+
+<line class="st25" x1="1542.583" y1="2185.833" x2="951.181" y2="1844.109"/>
+<line class="st25" x1="2129.732" y1="1166.519" x2="2129.732" y2="1847.228"/>
+<path class="st25" d="M950.423,1168.294l590.97-335.566"/>
+</g>
+
+<ellipse class="st24" cx="1542.43" cy="1530.226" rx="1131.27" ry="1131.279"/>
+
+<g class="st23">
+<polygon class="st22" points="1221.952,1954.891 1221.952,1425.968 1529.448,1182.638 1835.401,1419.565 1835.401,1954.891 "/>
+</g>
+<ellipse class="st21" cx="1544.266" cy="1526.406" rx="1131.27" ry="1131.279"/>
+
+<g class="st20">
+	<polygon class="st17" points="717.632,1673.044 717.632,1397.844 877.383,1397.844 877.383,1425.22 747.889,1425.22 
+		747.889,1524.096 866.937,1524.096 866.937,1551.292 747.709,1551.292 747.709,1673.044 	"/>
+	<polygon class="st17" points="977.881,1673.044 1076.937,1397.664 1106.474,1397.664 1205.17,1673.044 1172.752,1673.044 
+		1091.525,1435.125 1090.625,1435.125 1009.038,1673.044 	"/>
+	<polygon class="st17" points="1044.338,1562.638 1139.253,1562.638 1147.177,1586.952 1035.693,1586.952 	"/>
+	<path class="st17" d="M1358.678,1425.1v220.026h50.369c0,0,14.138-0.27,19.631-0.63c5.493-0.36,12.247-1.171,15.039-1.621
+		c2.792-0.45,9.005-1.801,11.977-2.702s8.195-2.792,11.076-4.232c2.882-1.441,8.105-4.322,10.716-6.934
+		c2.611-2.611,4.503-4.953,5.763-7.024c1.261-2.071,2.612-5.043,3.242-6.574s2.792-8.915,2.882-13.688s0.72-10.446-0.81-17.02
+		c-1.531-6.574-3.332-12.607-6.304-16.84s-6.934-8.465-9.635-10.446c-2.702-1.981-10.266-6.484-13.958-7.924
+		c-3.692-1.441-13.868-3.692-17.29-4.142c-3.422-0.45-15.759-0.72-23.774-0.72c-8.015,0-62.045,0-62.045,0v-27.916h52.41
+		c0,0,10.446-0.27,13.148-0.63c2.702-0.36,11.617-1.441,14.228-2.161c2.611-0.72,8.285-2.251,10.896-3.242
+		c2.612-0.991,8.195-3.602,9.906-4.773c1.711-1.171,7.564-5.493,9.726-8.645c2.161-3.152,5.673-8.735,6.754-15.039
+		c1.081-6.304,1.801-11.797,0.99-17.29c-0.81-5.493-1.801-10.446-2.521-12.337c-0.72-1.891-3.782-8.735-6.754-11.707
+		c-2.972-2.972-7.564-6.844-11.797-9.005c-4.232-2.161-9.545-3.872-13.688-4.683s-11.346-1.351-14.408-1.351s-95.815,0-95.815,0
+		v-27.826h100.948c0,0,14.468,0.24,23.053,2.581c8.585,2.341,16.029,4.983,21.252,8.285c5.223,3.302,10.746,7.504,14.228,11.286
+		c3.482,3.782,8.105,9.846,10.446,15.429c2.341,5.583,4.743,11.406,5.523,20.352c0.781,8.945,0.781,16.269-0.78,24.134
+		s-3.962,14.828-8.585,21.552c-4.623,6.724-12.727,14.348-20.832,18.611c-8.105,4.262-13.508,5.643-13.508,5.643v1.321
+		c0,0,9.305,1.321,15.609,3.542c6.304,2.221,15.309,6.063,21.132,11.286c5.823,5.223,11.647,10.926,16.029,20.112
+		c4.382,9.185,7.204,19.871,7.144,31.218c-0.06,11.346-0.24,17.23-4.082,29.297c-3.842,12.067-13.808,26.235-29.177,35.3
+		s-33.979,13.988-50.669,14.588c-16.689,0.6-17.83,0.426-21.672,0.483c-3.842,0.057-86.059,0-86.059,0v-250.226h30.107
+		L1358.678,1425.1z"/>
+	<path class="st17" d="M1686.825,1673.044h-30.137v-275.08h97.496c0,0,14.648,0.12,24.254,2.521s22.213,6.364,32.418,14.168
+		s21.372,22.933,25.214,37.101s7.084,34.34-0.84,57.513s-25.695,34.94-30.497,37.702s-10.326,5.403-12.247,6.124
+		c-1.921,0.72-4.683,1.801-4.683,1.801l57.032,118.15h-34.58l-52.59-111.907h-73.482v-27.256h64.477c0,0,12.247-0.24,18.971-1.801
+		c6.724-1.561,17.53-3.962,25.695-11.767c8.165-7.805,14.048-17.53,15.369-30.978c1.321-13.448,0-32.659-11.406-45.506
+		c-11.406-12.847-29.297-18.13-41.063-18.491c-11.767-0.36-69.52,0-69.52,0L1686.825,1673.044z"/>
+	<rect x="1982.554" y="1398.204" class="st17" width="30.497" height="274.84"/>
+	<polygon class="st17" points="2164.818,1398.204 2164.818,1673.044 2195.075,1673.044 2195.075,1573.744 2229.415,1536.763 
+		2323.308,1673.044 2362.45,1673.044 2251.987,1515.391 2356.687,1398.204 2320.186,1398.204 2196.516,1534.122 2195.075,1534.122 
+		2195.075,1398.204 	"/>
+</g>
+
+
+</svg>
