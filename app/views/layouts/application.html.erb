@@ -5,35 +5,7 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
- <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-     <meta charset="utf-8">
-     <style>
-       html, body {
-         height: 100%;
-         margin: 0;
-         padding: 0;
-       }
-       #map {
-         height: 100%;
-       }
- #floating-panel {
-   position: absolute;
-   top: 10px;
-   left: 25%;
-   z-index: 5;
-   background-color: #fff;
-   padding: 5px;
-   border: 1px solid #999;
-   text-align: center;
-   font-family: 'Roboto','sans-serif';
-   line-height: 30px;
-   padding-left: 10px;
- }
-
-     </style>
- 
- 
- 
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript">
   $(function(){
       $("#attachment").change(function(){
@@ -41,12 +13,147 @@
       });
   });
   </script>
+<script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/VelocityJS/1.2.2/VelocityJS.ui.js"></script>
+<script type="text/javascript" src="app.js"></script>
+
+<script type="text/javascript" src="countdown.js"></script>
+
+<script type="text/javascript" src="script.js"></script>
+
+
+<link rel="stylesheet" href="animsition.min.css">
+
+
+<script>
+  $(document).ready(function() {
+  var $menu = $('.has-submenu');
+
+  $menu.on('click', function() {
+    var $subMenu = $(this).children('ul');
+    var $subMenuItem = $subMenu.children('li');
+    if ( ! $subMenu.hasClass('on-view') ) {
+      $subMenu.addClass('on-view');
+      $subMenu.velocity('transition.slideDownIn', {
+        duration: 200
+      });
+      $subMenuItem.velocity('transition.expandIn', {
+        delay: 200,
+        duration: 300,
+        stagger: 100,
+      }); 
+    } else {
+      $subMenu.removeClass('on-view');
+      $subMenu.add($subMenuItem).velocity('reverse');
+    }
+  });
+});
+  
+  </script>
+
 
 
 </head>
-<body>
+<body style="position:relative;">
+
+
+ <div class="menu">
+	 <div style="margin:0 auto;margin-top:40px; margin-left:85px;margin-bottom:30px;">
+      <h1 style="color:white;font-size:27px; letter-spacing:6px; margin: 0 auto;font-family:'San Francisco'; font-weight:200; ">FABRIK</h1>
+  </div>
+      <!-- Menu -->
+      <ul>
+        <li><%= link_to 'Dashboard', '/' %></li>
+        <li><%= link_to 'New print',  prints_path, method: :create %></li>
+        <li><%= link_to 'Store', '/' %></li>
+        <li><%= link_to 'Préferences', current_user %></li>
+      </ul>
+	  
+	  
+	  <div style="position:absolute; bottom:20px; left:55px;bottom:40px;"><%= image_tag("Signaturefinal.svg", :alt => "images") %></div>
+	  <div style="position:absolute; bottom:20px; left:98px;bottom:33px;"><h5 style="letter-spacing:6px; font-size:11px;color:white;">v 12-0-5</h1></div>
+    </div>
+
+
+
+
+
+
+
+
+ <nav class="navigation">
+    <ul class="cf">
+      <li><a href="#">Home</a></li>
+      <li class="has-submenu" style="position:fixed: top:80px; right:99px;z-index:80;">
+        <a href="#">Services</a>
+        <ul style="position:fixed; top:90px; right:20px; z-index:80;">
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">App Development</a></li>
+          <li><a href="#">Icon Design</a></li>
+          <li><a href="#">Illustration</a></li>
+          <li><a href="#">Typography</a></li>
+        </ul>
+      </li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+
+
+
+
+
+
+
+
+
+
+    <!-- Header -->
+      <div class="jumbotron" style="z-index:15;">
+
+        <div class="icon-menu">
+          <a id="nav-toggle"><span></span></a>
+        </div>
+			
+		
+   		<!-- Nom utilisateur déclenche menu -->
+
+    	<div class="dropdown-toggle" style="position:absolute; right:40px; top:50px; z-index:5;background-color:none;">
+       	 <% if current_user %> 
+
+      	 		<a style="font-family: 'San Francisco'; font-size:18px; float:left; display:inline; color:black;"> <%= current_user.last_name %> <%= current_user.first_name %> <div style="margin-left:8px; margin-top:-1px; width:16px; height:16px; float:right; 				display:inline;"><%= image_tag("triangle.svg", :alt => "images") %></div></a>
+
+   	   		 <% else %> 
+
+       			<%= link_to "Login", 'login' %></a></li> 
+       			<%= link_to "Signup", 'signup' %></a></li> 
+
+   	   		 <% end %>
+      
+    	 </div>
+	
+	
+	
+	
+	
+</div>
+
+
+
+
+
+
 
 <%= yield %>
+
+
+
+<script type="text/javascript" src="app.js"></script>
+
+<script type="text/javascript" src="countdown.js"></script>
+
+<script type="text/javascript" src="script.js"></script>
+
+<script src="animsition.min.js"></script>
 
 </body>
 </html>

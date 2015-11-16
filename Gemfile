@@ -20,7 +20,10 @@ gem 'carrierwave', '~> 0.9'
 gem 'bootstrap-sass', '~> 2.3.2'
 gem 'jquery-ui-rails'
 gem 'jquery-scrollto-rails', '~> 1.4', '>= 1.4.3'
-
+gem 'turbolinks_transitions'
+gem 'stripe'
+gem 'haml'
+gem 'bcrypt', '~> 3.1.7'
 
 group :development, :test do
   gem 'sqlite3'

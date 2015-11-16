@@ -1,9 +1,26 @@
 PrintThing::Application.routes.draw do
-  resources :prints, only: [:new, :create, :index, :destroy] do
+  resources :prints, only: [:new, :show, :create, :index, :destroy] do
     resources :steps, only: [:show, :update], controller: 'print/steps'
   end
 
   root to: 'prints#index'
+  
+  get 'user/:id' => 'users#show'
+  get 'signup' => 'users#new'
+  resources :users
+  
+  get '/login' => 'sessions#new'
+  post 'login' => 'sessions#create'
+  delete 'logout' => 'sessions#destroy'
+  get 'impression/:id' => 'prints#show'
+  get 'edit/:id' => 'users#edit'
+  
+  
+  resources :prints
+  resources :home_page
+
+
+  resources :charges
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

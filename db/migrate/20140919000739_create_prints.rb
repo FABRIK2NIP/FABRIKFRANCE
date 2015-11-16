@@ -7,8 +7,12 @@ class CreatePrints < ActiveRecord::Migration
       t.string :qualite
       t.string :livraison
       t.string :address
-
-      t.timestamps
+      t.string :useridentifiant
+      t.string :town
+      t.string :departement
+      t.string :zipcode
+      t.string :pays
+      t.timestamps null: false
     end
   end
 end

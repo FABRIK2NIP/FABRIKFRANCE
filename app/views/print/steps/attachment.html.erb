@@ -1,40 +1,38 @@
-	<body style="min-width: 700px;">
-
-			
+	<div id="content">		
 		 <%= form_for @print, method: :put, :html => { :multipart => true, :id =>'form1' },  url: wizard_path do |f| %>
- 	<div class="interface">
- 			
+ 	<div class="interface" style="height:80%">
+ 		
+ 		<h2 style="font-size:50px;letter-spacing:2px;font-weight:100;font-size:30px;margin-bottom:10px;">UPLOADER</h2>
+  		<h2 style="color:grey; font-size:16px;letter-spacing:0px;font-weight:200;margin:0 auto;margin-top:0px;margin-bottom:0px;">Selectionner le fichier à imprimer.</h2>
 			
-		
- 			
- 		<h1>FABRIK</h1>
- 		<h2>UPLOADER</h2>
-  			
-  		<div class="encadrement" style="text-align: center;">
+  		<div class="encadrement" style="text-align: center;border:none;height:450px;margin-top:30px;">
 			
-			<object >
-			<div style="margin: auto; width: 35%; margin-top: 70px; height:220px; min-width:300px;min-height: 220px;">
+			
+			<div style="margin: auto; width: 300px; margin-top: 20px; height:35%; min-width:300px;min-height: 220px;max-width:350px;">
 			<%= image_tag("logocloud.svg", :alt => "images") %>
 			</div>
 			
-		</object>
+
 		<div style="clear:both;position:relative; text-align:center; border:none;">
 			
 			
 			
 			<form name="form1" id="form1">
-		<div id="attachment" style="margin-top: 35px;">
+		<div id="attachment" style="margin-top: 15px;">
 			<div class="wrapper">
 				<input type="file" id="attachment" name="print[attachment]" style="height:58px; width:180px;"></input>
+				
 			</div>
+			
+			
 			<div>
-			<button>UPLOAD</button>
+			<button class="btnbas btn-2 btn-2c" style="letter-spacing:1px;text-transform:none;padding:10px 25px;font-weight:300;box-shadow: 0 6px #565AE0;">Télécharger</button>
 		</div>
 	
 		</div>
-			<p style="margin-top: 15px; max-width: 60%; min-width: 150px;">fichiers en .<b>stl</b>, .<b>obj</b> et .<b>zip</b> acceptés.</p>
+			<p style="margin-top: 7px; max-width: 60%; min-width: 150px;letter-spacing:0.5px;">fichiers en .<b>stl</b>, .<b>obj</b> et .<b>zip</b> acceptés.</p>
 			
-			<p style="margin-top: 40px; max-width: 60%; min-width: 150px;">En téléchargeant vos fichiers dans FABRIK, vous acceptez nos <a href="http://www.fabrik.company" >conditions générales d’utilisations</a>.</p>
+			<p style="margin-top: 40px; max-width: 60%; min-width: 150px; line-height:18px;letter-spacing:0.5px;">En téléchargeant vos fichiers dans FABRIK, vous acceptez nos <a href="http://www.fabrik.company" >conditions générales d’utilisations</a>.</p>
 			
 			</div>
 		</div>
@@ -45,20 +43,31 @@
 		
 		
 		
-		<H2>Upload Your STL file here.</H2>
-		<table border="1">
-		<form action="live_preview.php" method="post"
-		enctype="multipart/form-data" border="1px">
-		<tr><td>
-		<label for="file">Filename:</label>
-		<input type="file" name="file" id="file"/>
-		</td></tr>
-		<tr><td>
-		<input type="submit" name="submit" value="Submit" />
-		</td></tr>
-		</form>
-		</table><BR>
-		Note: .stl files only.
+		</div>
+		<div class="bottomnew"style="background-color:white;">
+			<div style="margin: 0 auto;width:780px;">
+				<p style="color:black; font-size:15px;letter-spacing:2px;font-weight:200;float:left; position:inline; margin-top:8px; margin-left:0px;">FABRIK</p> 
+				<p style="color:black; font-size:12px;letter-spacing:0px;font-weight:200;float:left; position:inline; margin-left:8px;margin-top:8px;">-</p>
+				<p style="color:black; font-size:12px;letter-spacing:0px;font-weight:200;float:left; position:inline; margin-left:8px;margin-top:8px;">Conditions générales</p>
+				<p style="color:black; font-size:12px;letter-spacing:0px;font-weight:200;float:left; position:inline; margin-left:8px;margin-top:8px;">-</p>
+				<p style="color:black; font-size:12px;letter-spacing:0px;font-weight:200;float:left; position:inline; margin-left:8px;margin-top:8px;">Politique de confidentialité</p>
+				<p style="color:black; font-size:12px;letter-spacing:0px;font-weight:200;float:left; position:inline; margin-left:8px;margin-top:8px;">-</p>
+				<p style="color:black; font-size:12px;letter-spacing:0px;font-weight:200;float:left; position:inline; margin-left:8px;margin-top:8px;">Politique relative au contenu</p>
+				<p style="color:black; font-size:12px;letter-spacing:0px;font-weight:200;float:left; position:inline; margin-left:8px;margin-top:8px;">-</p>
+		
+					<p style="color:black; font-size:12px;letter-spacing:0px;font-weight:200;float:left; position:inline; margin-left:8px;margin-top:8px;">Copyright © 2015 Fabrik</p>
+					<p style="color:black; font-size:12px;letter-spacing:0px;font-weight:200;float:left; position:inline; margin-left:8px;margin-top:8px;">-</p>
+					<p style="color:black; font-size:12px;letter-spacing:0px;font-weight:200;float:left; position:inline; margin-left:8px;margin-top:8px;">Tous droits réservés</p>
+			</div>
+			
+			</div>
+		</div>
+		</div>
+		
+		
+		
+		
+		
 		
 		<script>
 		$(function(){
@@ -69,14 +78,10 @@
 		
 		</script>
 		
+	</div>
 		
-		
-		
-		</body>
-		</html>
-		
-		
-		
+
+
 		
 		
 		
@@ -84,9 +89,6 @@
 		
 		
 		
-		
-		
-	</body>
 	
 
 

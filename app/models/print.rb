@@ -7,7 +7,7 @@ class Print < ActiveRecord::Base
 
   validates :attachment, presence: true, if: -> { required_for_step?(:attachment) }
   validates :materiau, :qualite, :livraison, presence: true, if: -> { required_for_step?(:finition) }
-  validates :address, presence: true, if: -> { required_for_step?(:confirm) }
+  validates :address, :town, :departement, :zipcode, :pays, :useridentifiant, presence: true, if: -> { required_for_step?(:confirm) }
 
 
   def required_for_step?(step)

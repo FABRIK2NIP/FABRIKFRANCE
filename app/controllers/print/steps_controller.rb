@@ -20,9 +20,9 @@ steps *Print.form_steps
                            when "attachment"
                              [:attachment]
                            when "finition"
-                             [:materiau, :qualite, :livraison]
+                             [:materiau, :qualite, :livraison, :name]
                            when "confirm"
-                             [:address]
+                             [:address, :town, :departement, :zipcode, :pays, :useridentifiant]
                            end
     
     params.require(:print).permit(permitted_attributes).merge(form_step: step)

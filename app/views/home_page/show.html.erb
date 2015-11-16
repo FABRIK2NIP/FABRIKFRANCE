@@ -1,0 +1,74 @@
+<script src="jquery.viewportchecker.min.js"></script>
+<div class="headerhome" style="max-width:960px; width:90%; margin:0 auto;background-color:red;min-width:700px;"  >
+	<h1 style="float:left; margin-right:80px;color:white;font-family:'San Francisco'; 	font-weight:200;font-size:25px;letter-spacing:8px;margin-top:-80px;margin-left:0px;">FABRIK</h1>
+	<h1 style="float:left; margin-right:80px;color:#B0B2B2;font-family:'San Francisco'; 	font-weight:200;font-size:14px;letter-spacing:0.5px;margin-top:-74px;margin-left:150px;">Features</h1>
+	<h1 style="float:left; margin-right:80px;color:#B0B2B2;font-family:'San Francisco'; 	font-weight:200;font-size:14px;letter-spacing:0.5px;margin-top:-74px;margin-left:230px;">Pricing</h1>
+	<h1 style="float:left; margin-right:80px;color:#B0B2B2;font-family:'San Francisco'; 	font-weight:200;font-size:14px;letter-spacing:0.5px;margin-top:-74px;margin-left:300px;">more</h1>
+
+
+<h1 style="float:right; margin-right:80px;color:#B0B2B2;font-family:'San Francisco'; font-weight:200;font-size:14px;letter-spacing:0.5px;margin-top:-69px;margin-right:86px;">Log in</h1>
+<h1 style="float:right; margin-right:80px;color:white;font-family:'San Francisco'; font-weight:200;font-size:14px;letter-spacing:0.5px;margin-top:-74px;margin-right:0px;border:1px solid white; border-radius:6px;padding: 5px 10px;">Sign up</h1>
+
+</div>
+
+<div class="Firstsight" style="width:100%; height:100%; background-color:black; margin-top:0px;position:relative;">
+	<div class="firstsightcontent" style="height:100%; margin-top:0px;max-width:960px; width:90%; margin: 0 auto; 	min-width:700px;position:relative;"> 
+		<h1 style=" margin-left:80px;color:white;font-family:'San Francisco'; 		font-weight:200;font-size:30px;letter-spacing:2px;margin-top:0px;">3D printing 20 times cheapper.</h2>
+		<h1 style=" margin-left:80px;color:#B0B2B2;font-family:'San Francisco'; 		font-weight:200;font-size:30px;letter-spacing:2px;margin-top:10px;">Now in 4K resolution.</h1>	
+		<div style="width:450px;margin:80 auto;float:right;"><%= image_tag("progression.svg", :alt => "images") %></div>
+	</div>
+</div>
+
+
+<div class="Comparatif" style="width:100%; height:100%; background-color:red;">
+
+
+
+</div>
+
+
+<div class="4K" style="width:100%; height:100%; background-color:blue;">
+
+	<div style="width:450px;margin:80 auto;" class="demo"><%= image_tag("logofile.svg", :alt => "images") %></div>
+
+</div>	
+
+
+<div class="Resolution" style="width:100%; height:100%; background-color:green;">
+
+
+</div>	
+
+
+<div class="Materiau" style="width:100%; height:100%; background-color:yellow;">
+
+
+</div>	
+
+
+<div class="Call to action" style="width:100%; height:100%; background-color:red;">
+
+
+</div>	
+
+
+<script>
+$(document).ready(function(){
+	
+	var $demo = $(".demo");
+	
+$('.demo').viewportChecker({
+// Class to add to the elements when they are visible
+	$demo.addClass('js-animate');
+
+// The offset of the elements (let them appear earlier or later)
+offset: 100,
+
+// Add the possibility to remove the class if the elements are not visible
+repeat: false,
+
+ // Callback to do after a class was added to an element. Action will return "add" or "remove", depending if the class was added or removed
+callbackFunction: function(elem, action){}
+});
+});
+</script>

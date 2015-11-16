@@ -1,0 +1,35 @@
+<div class="login">
+  <div class="container">
+    <div class="form" style="position: relative; text-align:center; margin: 0 auto; width:450px; margin-top:40px;">	
+			<div style="text-align: left; padding-top:0px;">
+				<h2 style="font-size:30px; font-weight:200; letter-spacing:0.5px;margin-bottom:0px;margin-top:10px;">Profil</h2><h2 style="font-size:17px; font-weight:200; letter-spacing:3px;margin-top:30px; color:#ACAEAE;margin-left:320px;position:absolute; right:-3px; top:0px;margin-top:3px;"><%= link_to "EDIT", edit_user_path %></h2>
+				<h2 style="font-size:25px; font-weight:200; letter-spacing:0.5px; color:#ACAEAE;margin-top:-5px;"> <%= @user.last_name %> <%= @user.first_name %></h2>
+				<br>
+				<div style="margin-left:-20px;border:2px solid grey; border-radius:10px;width:100%; padding-top:18px; padding-left:20px; padding-bottom:2px;">
+				<h2 style="font-size:20px; font-weight:200; letter-spacing:0.5px;margin-bottom:0px;display:inline;">Abonnement</h2>
+				<h2 style="position:absolute; right:35px; top:140px; font-size:17px; font-weight:200; letter-spacing:3px; color:#ACAEAE;"><%= link_to "UPGRADE"%></h2>
+				<h2 style="font-size:17px; font-weight:200; letter-spacing:0.5px;margin-top:3px; color:#ACAEAE;">100 - 600 impressions</h2>
+				
+			    </div>
+				<br>
+				<h2 style="font-size:20px; font-weight:200; letter-spacing:0.5px;margin-bottom:0px;margin-top7px;">Email</h2>
+				<h2 style="font-size:17px; font-weight:200; letter-spacing:0.5px;margin-top:2px; color:#ACAEAE;"><%= @user.email %></h2>
+				<br>
+				<h2 style="font-size:20px; font-weight:200; letter-spacing:0.5px;margin-bottom:0px;">Téléphone</h2>
+				<h2 style="font-size:17px; font-weight:200; letter-spacing:0.5px;margin-top:2px; color:#ACAEAE;">06 80 12 60 75</h2>
+				<br>
+				<h2 style="font-size:20px; font-weight:200; letter-spacing:0.5px;margin-bottom:10px;margin-top:5px;">Adresse de facturation</h2>
+				
+	            <h2 style="font-size:17px; font-weight:200; letter-spacing:0.5px;margin-top:2px; color:#ACAEAE;margin-bottom:15px;"><%= @user.address2 %></h2>
+				<div>
+					<h2 style="font-size:17px; font-weight:200; letter-spacing:0.5px;margin-top:2px; color:#ACAEAE;display:inline;"><%= @user.zipcode2 %></h2>
+					<h2 style="font-size:17px; font-weight:200; letter-spacing:0.5px;margin-top:2px; color:#ACAEAE;display:inline;margin-left:10px;">|</h2>
+					<h2 style="font-size:17px; font-weight:200; letter-spacing:0.5px;margin-top:2px; color:#ACAEAE;display:inline;margin-left:10px;"><%= @user.town2 %></h2>
+				</div>
+				<h2 style="font-size:17px; font-weight:200; letter-spacing:0.5px;margin-top:15px; color:#ACAEAE;"><%= @user.pays2 %></h2>
+			</div>
+		
+  
+    </div>
+  </div>
+</div>

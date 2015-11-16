@@ -1,66 +1,167 @@
+<div class="animsition">
 
+<div style="text-align: center; width:100%; position:relative; margin:0 auto;height:80%; background-color:white; padding-top:50px;" id="content">
+	<div style="width:680px;position:relative; margin: 0 auto;">
+	<h1 class="fadeIn" style="color:black; font-size:32px; margin-top:-8px;float:left; display:block; margin-bottom:00px;letter-spacing:2px;">IMPRESSIONS</h1>
+	<h1 style="color:#545454; font-size:36px;float:left; display:block; margin-bottom:00px;font-size:15px;letter-spacing:0.5px;margin-left:0px;font-weight:100;position:absolute;margin-top:39px; border-radius:5px;padding: 4px 10px;background-color:#F2F2F2;">Actualisé à <%= Time.now.strftime("%H:%M")%> - <%= Time.now.strftime("%m/%d") %></h1>
+	
 
-
-
-<div style="text-align: center; width:100%; position:relative; margin:0 auto; height:1350px; background-color:black; margin-top:-200px; padding-top:190px;">
-	<h1 style="color:white; font-size:40px;">PRINTS LIST</h1>
 	
 <br>
 <br>
+<div style="float:right; display:inline;margin-top:-50px;margin-right:-30px;" id="content">
+<%= link_to 'New print', prints_path, method: :create, :class => 'btnprint btn-2print btn-2cprint', confirm: 'Êtes vous sur de supprimer cette impression ?' %>
 
 
-<div style="width:680px; text-align:center; background-color:black;  margin: 0 auto; margin-top:20px; margin-bottom:20px;border-radius:5px; padding:60px;padding-top: 30px; padding-bottom:60px; border: 1px solid white">
-<div style="width:680px; text-align:center; background-color:black;  margin: 0 auto; margin-top:0px; margin-bottom:0px;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+	<div style="float:right; display:inline; margin-top:-18px; margin-right:-14px;width:28px; height:28px;">
+		<%= image_tag("gear.svg", :alt => "images") %>
+	</div>
+</div>
+<div style="width:680px; text-align:center; background-color:white;  margin: 0 auto; margin-top:20px; margin-bottom:20px;border-radius:5px; padding:60px;padding-top: 30px; padding-bottom:px; ">
+<div style="width:680px; text-align:center; background-color:white;  margin: 0 auto; margin-top:0px; margin-bottom:0px;">
 <table style="width:100%;">
 <table style="width:100%; ">
   <thead>
     <tr>
-      <th style="width:40px;">ID</th>
-      <th style="width:150px;">Attachment</th>
-      <th style="width:100px;">Materiau</th>
-      <th style="width:100px;">Qualité</th>
-      <th style="width:100px;">Livraison</th>
-      <th style="width:120px;">Adresse</th>
+      <th style="width:30px;">ID</th>
+      <th style="width:143px;">Nom</th>
+      <th style="width:113px;">Materiau</th>
+      <th style="width:115px;">Qualité</th>
+      <th style="width:120px;">Prix</th>
       <th></th>
 
     </tr>
   </thead>
 </table>
 
-  <tbody style="display: block;  height:600px; overflow: auto; width:100%">
-	  <table style=" display:block; height:640px; overflow-y: scroll; width:100%">
-  	<% @prints.each do |print| %>
-      <tr style="width:100%; max-height:40px;">
+  <tbody style="display: block;  height:400px; overflow: auto; width:100%; position:relative;">
+	  <table style=" display:block; height:440px; overflow-y: scroll; width:100%" id="tableid">
+  		
+	  	<div id="welcomeDiv" style="width:680px; height:380px; background-color:#F2F2F2;display:none;position:absolute;top:198px;margin: 0 auto;border-radius:5px;text-align:center;">
+	  		<div style="width:150px; height:150px;margin: 0 auto;margin-top:50px;"><%= image_tag("logook.svg", :alt => "images") %></div>
+	  		<h1 style="font-size:25px; letter-spacing:1px;margin-top:25px;">Prêt à imprimer</h1>
+	  		<div style="width:450px;margin: 0 auto;margin-top:15px;letter-spacing:0.5px;"><p style="letter-spacing:0.5px">Toutes vos impressions s'afficheront ici.</p>
+	  		<p style="margin-top:10px;line-height:20px;letter-spacing:0.5px">Vous n'avez pas encore lancé d'impression. Lancez votre <strong>première impression</strong> avec le bouton en haut à droite <strong>"New print"</script>.</p></div>
+		
+		
+		
+	  	</div>
+		  
+	<% @prints.each do |print| %>
+     
+		 <tr id="stay" class="tam" style="width:100%; max-height:40px;" data-link="prints/<%= print.id %>" >
 		  
         <td style="width:40px;"><%= print.id %></td>
-        <td style="width:150px;"><%= link_to "Download File", print.attachment_url %></td>
-        <td style="width:100px;"><%= print.materiau %></td>
-        <td style="width:100px;"><%= print.qualite %></td>
-        <td style="width:100px;  "><%= print.livraison %></td>
-		 <td style="width:120px; overflow: auto; margin-top:15px; margin-bottom:15px;" ><%= print.address %></td>
-        <td style=""><%= link_to 'Destroy', print, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td style="width:160px;font-weight:300;"><%=File.basename(print.attachment.path)%></td>
+        <td style="width:170px;color:grey;"><%= print.materiau %></td>
+		<td style="width:100px;color:grey;"><%= print.qualite %></td>
+		<td style="width:100px;text-align:right;padding-right:15px;"><%= print.name %> €</td>
+        <td style="width:220px;"><div class="progressBar2"><div></div></div></td>
 		
+		
+		
+		<%= javascript_tag do %>
+		jQuery(function($) {
+		$("tr[data-link]").click(function() {
+		window.location = this.dataset.link
+		});
+		})
+		
+		<% end%>
+		
+	
+		
+		
+	
+		
+		<script>
+		function progress(percent, $element) {
+		    var progressBarWidth = percent * $element.width() / 100;
+		    $element.find('div').animate({ width: progressBarWidth }, 500).html(percent + "% ");
+		}
+	
+		progress(100, $('.progressBar2'));
+		</script>
+	
 	 </tr>
     <% end %>
+
+	
+	
   </tbody>
 </table>
 </table>
-
-
 </div>
 
 
 </div>
-
-
-
-
-
-<br>
-<%= link_to 'New Print', prints_path, method: :create, :class => 'btn btn-2 btn-2c', confirm: 'Êtes vous sur de supprimer cette impression ?' %>
+<div class="bottomnew" style="background-color:white">
+	<div style="margin: 0 auto;width:780px;">
+		<p style="color:black; font-size:15px;letter-spacing:2px;font-weight:200;float:left; position:inline; margin-top:8px; margin-left:0px;">FABRIK</p> 
+		<p style="color:black; font-size:12px;letter-spacing:0px;font-weight:200;float:left; position:inline; margin-left:8px;margin-top:8px;">-</p>
+		<p style="color:black; font-size:12px;letter-spacing:0px;font-weight:200;float:left; position:inline; margin-left:8px;margin-top:8px;">Conditions générales</p>
+		<p style="color:black; font-size:12px;letter-spacing:0px;font-weight:200;float:left; position:inline; margin-left:8px;margin-top:8px;">-</p>
+		<p style="color:black; font-size:12px;letter-spacing:0px;font-weight:200;float:left; position:inline; margin-left:8px;margin-top:8px;">Politique de confidentialité</p>
+		<p style="color:black; font-size:12px;letter-spacing:0px;font-weight:200;float:left; position:inline; margin-left:8px;margin-top:8px;">-</p>
+		<p style="color:black; font-size:12px;letter-spacing:0px;font-weight:200;float:left; position:inline; margin-left:8px;margin-top:8px;">Politique relative au contenu</p>
+		<p style="color:black; font-size:12px;letter-spacing:0px;font-weight:200;float:left; position:inline; margin-left:8px;margin-top:8px;">-</p>
+		
+			<p style="color:black; font-size:12px;letter-spacing:0px;font-weight:200;float:left; position:inline; margin-left:8px;margin-top:8px;">Copyright © 2015 Fabrik</p>
+			<p style="color:black; font-size:12px;letter-spacing:0px;font-weight:200;float:left; position:inline; margin-left:8px;margin-top:8px;">-</p>
+			<p style="color:black; font-size:12px;letter-spacing:0px;font-weight:200;float:left; position:inline; margin-left:8px;margin-top:8px;">Tous droits réservés</p>
+	</div>
+			
+	</div>
+</div>
 </div>
 
 
 
 
 
+
+<style>
+$(document).ready(function(){
+document.querySelector( "#nav-toggle" )
+	.addEventListener( "click", function() {
+	  this.classList.toggle( "active" );
+   });
+});
+
+</style>
+
+	<script>
+		$(document).ready(function(){
+		var myElem = document.getElementById('stay');
+		if (myElem === null) { 
+		 document.getElementById('welcomeDiv').style.display = "block";
+			
+		}
+		
+	});
+		
+		</script>	
+
+</div>

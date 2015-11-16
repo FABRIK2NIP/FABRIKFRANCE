@@ -71,6 +71,36 @@ h1 {
 
 
 
+
+
+.champtexteprix {
+	
+	border: none;
+	width:180px;
+	height:85px;
+	margin-top:21px;
+	margin-bottom:0px;
+    font-family: 'San Francisco';
+	font-size:78px;
+	float:left;
+	font-weight:200;
+	padding-right:10px;
+	margin-right:-2px;
+    background-color:#FAFAFA;
+	text-align:right;
+	display:inline;
+	float:right;
+	
+
+}
+
+.champtexteprix:focus {
+	
+	background-color:#FAFAFA;	
+	outline:0;
+}
+
+
 .champtexte3 {
 	
 	border: 1px solid grey;
@@ -133,10 +163,102 @@ h1 {
 	margin-left:0px;
 	background-color:#F8F8F8;
 	margin-left: 0px;
+	margin-bottom:30px;
 }
 
 
 .champtexte5:focus {
+	
+	background-color:white;	
+	outline:0;
+}
+
+
+
+
+.formneutre {
+	font-size:25px;
+	font-weight:200; 
+	letter-spacing:0.5px;
+	border:1px solid grey; 
+	color:#ACAEAE;
+	margin-top:-4px;
+	margin-left:-1px;
+	border-top:none;
+	border-left:none;
+	border-right:none;
+	width:150px;
+	height:35px;
+    font-family: 'San Francisco';
+	float:left;
+	font-weight:300;
+    background-color:white;
+	margin-left:0px;
+	display:inline;
+	
+	
+	
+}
+	
+.formneutre:focus {
+	
+	background-color:white;	
+	outline:0;
+}
+
+
+.formneutre2 {
+	font-size:17px;
+	font-weight:200; 
+	letter-spacing:0.5px;
+	border:1px solid grey; 
+	color:#ACAEAE;
+	margin-top:-4px;
+	margin-left:-1px;
+	border-top:none;
+	border-left:none;
+	border-right:none;
+	width:150px;
+	height:35px;
+    font-family: 'San Francisco';
+	font-weight:300;
+    background-color:white;
+	margin-left:0px;
+	
+	
+	
+}
+	
+.formneutre2:focus {
+	
+	background-color:white;	
+	outline:0;
+}
+
+.formneutre3 {
+	font-size:17px;
+	font-weight:200; 
+	letter-spacing:0.5px;
+	border:1px solid grey; 
+	color:#ACAEAE;
+	margin-top:-4px;
+	margin-left:-1px;
+	border-top:none;
+	border-left:none;
+	border-right:none;
+	width:150px;
+	height:35px;
+    font-family: 'San Francisco';
+	font-weight:300;
+    background-color:white;
+	margin-left:0px;
+	float:left;
+	display:inline;
+	
+	
+}
+	
+.formneutre3:focus {
 	
 	background-color:white;	
 	outline:0;
@@ -234,14 +356,15 @@ table {
 
 
 th {
-	background-color: black;
-	color:white;
+	background-color: white;
+	color:black;
 	font-family: 'San Francisco';
-	font-weight:200;
+	font-weight:normal;
 	font-size:18px;
 	letter-spacing:1px;
-	border: 1px solid black;
-	border-bottom: 1px solid #404040 ;
+	border: none;
+	border-top:1px solid white;
+	border-bottom: 1px solid #BFBFBF ;
 	border-collapse: collapse;
 	
 	
@@ -249,30 +372,30 @@ th {
 
 td {
 	
-	color:white;
+	color:black;
 	
 	
 }
 
 
 table tr:nth-child(odd) {
-	background-color:black;
+	background-color:white;
 	
 }
 
 table tr:nth-child(even) {
-	background-color:#090909;
+	background-color:white;
 	
 }
 
 
 table tr:nth-child(odd):hover {
-	background-color:#282828;
+	background-color:#F2F2F2;
 	
 }
 
 table tr:nth-child(even):hover {
-	background-color:#282828;
+	background-color:#F2F2F2;
 	
 }
 
@@ -290,8 +413,8 @@ table tr:nth-child(even):active {
 
 tr {
 	height:50px;
-	border-top:1px solid #404040;
-	border-bottom:1px solid #404040;
+	border-top:1px solid #BFBFBF;
+	border-bottom:1px solid #BFBFBF;
 	border-collapse: collapse;
 }
 
@@ -301,6 +424,15 @@ tr {
 	position:relative;
 	float:left;
 	margin-left: 5%;
+}
+
+
+.holder3{
+	width: 100%;
+	height:300px;
+	position:relative;
+	margin-top:0px;
+
 }
 
 .frame{
@@ -314,7 +446,7 @@ tr {
 	left:0;
 	width:10%;
 	height:100%;
-	background-color: #F0F0F0;
+	background-color: none;
 }
 
 .bar2{
@@ -326,29 +458,37 @@ tr {
 	background-color: white;
 }
 
+.bar3{
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	height:6%;
+	background-color: white;
+}
+
 .viewer{
 	position:relative;
 	top:0;
 	left:0;
 	width:100%;
 	height:800px;
-	background-color: #F0F0F0;
+	background-color: none;
 	margin-top:80px;
 	
 }
 
 .rangeboutton {
 	float:right;
-	background-color: white;
+	background-color:#FAFAFA;
 	border-radius:8px;
-	width:35%;
+	
 	height:79%;
 	margin-top:80px;
-	margin-right:5%;
-	margin-left:60%;
+	right:5%;
 	margin-bottom:60px;
 	position:absolute;
-	max-width:450px;
+	width:400px;
 }
 
 .encadrement {
@@ -407,7 +547,7 @@ tr {
 .interface {
 	position:relative;
 	height:1800px;
-	background-color: #FFFFFF;
+	background-color: none;
 	text-align: center;
 	clear:both;
 	margin: auto;	
@@ -423,59 +563,109 @@ tr {
 .bottom {
 	width: 100%;
 	position:relative;
-	height:1800px;
-	background-color: #000000;
+	height:200px;
+	background-color: #F2F2F2;
 	text-align: center;
-	padding:0px 0px 0px 0px;
 	clear: both;
 	
 	
 }
 
-
-.material {
-	position:relative;
+.bottomnew {
+	
+	
+	height:50px;
+	position: fixed;
+	bottom:0px;
 	width:100%;
 	text-align:center;
-	clear:both;
-	margin:0 auto;
-	margin-top: 80px;
-	height:600px;
-	padding-bottom:40px;
+	
+	
 	
 }
 
 
-.quality {
-	position:relative;
+.bottomnew2 {
+	
+	
+	height:50px;
+	position: relative;
+	bottom:0px;
 	width:100%;
 	text-align:center;
-	clear:both;
-	margin:0 auto;
-	margin-top: 50px;
-	padding-top:30px;
 	
+	
+	
+}
+
+#gradient
+{}
+
+
+#gradient2
+{
+  width: 100%;
+  height: 50%;
+  padding: 0px;
+  margin: 0px;
+  top:53%;
+  position:absolute;
+}
+
+.material {
+	position:relative;
+	width:520px;
+	text-align:center;
+	clear:both;
+	margin-top: -80px;
+	float:right;
 	height:800px;
-	background-color:white;
+	padding-bottom:40px;
+	margin-right:5%;
+
+
+	
+}
+
+
+
+
+.quality {
+	position:relative;
+	width:490px;
+	text-align:center;
+	clear:both;
+	margin-top: -10px;
+	padding-top:30px;
+	float:right;
+	height:800px;
+	right:5%;
+	
 }
 
 
 
 .delivery {
 	position:relative;
-	width:100%;
+	width:490px;
 	text-align:center;
 	clear:both;
 	margin:0 auto;
-	margin-top: 50px;
+	margin-top:0px;
 	padding-top:30px;
-	
-	height:1000px;
+	float:right;
+	height:300px;
 	background-color:none;
+	right:5%;
+	
 	
 }
 
-
+table:empty {
+	
+	
+	
+}
 
 
 
@@ -493,7 +683,7 @@ tr {
 	text-align:right;
 	color:white;
 	margin-left:50px;
-	margin-bottom: 40px;
+	margin-bottom: 25px;
 	padding-top:50px;
 }
 
@@ -510,7 +700,7 @@ tr {
 	text-align:right;
 	color:white;
 	margin-left:50px;
-	margin-bottom: 40px;
+	margin-bottom: 25px;
 	-webkit-box-shadow: 0px 0px 0px 1px #595A5A;
 	-moz-box-shadow:  0px 0px 0px 1px #595A5A;
 	box-shadow:  0px 0px 0px 1px #595A5A;	
@@ -533,7 +723,7 @@ tr {
 	color:white;
 	text-align:right;
 	margin-left:50px;
-	margin-bottom: 40px;
+	margin-bottom: 25px;
 	-webkit-box-shadow: 0px 0px 0px 1px black;
 	-moz-box-shadow:  0px 0px 0px 1px black;
 	box-shadow:  0px 0px 0px 1px black;	
@@ -559,7 +749,7 @@ tr {
 	text-align:right;
 	color:white;
 	margin-left:50px;
-	margin-bottom: 40px;
+	margin-bottom: 25px;
 	-webkit-box-shadow: 0px 0px 2px 1px blue;
 	-moz-box-shadow:  0px 0px 2px 1px blue;
 	box-shadow:  0px 0px 2px 1px blue;	
@@ -682,11 +872,80 @@ tr {
 	float: left;
 	text-align:center;
 	margin-left:50px;
-	margin-bottom: 40px;
+	margin-bottom: 25px;
 	-webkit-box-shadow: 0px 0px 0px 1px black;
 	-moz-box-shadow:  0px 0px 0px 1px black;
 	box-shadow:  0px 0px 0px 1px black;	
 	cursor:pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 992px) {
+  .img-container img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 512px) {
+  .pull-right {
+    background-color: #f1f2f2;
+    position: relative;
+    margin: 0;
+    width: 100%;
+  }
+
+  .pull-right ul {
+    margin: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-before: 0;
+    -webkit-padding-start: 0;
+  }
+
+  .pull-right ul li {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+    width: 50%;
+  }
+
+  .pull-right ul li a {
+    display: block;
+    width: 100%;
+  }
+
+  .img-container {
+    height: 200px;
+  }
 }
 
 
@@ -749,7 +1008,7 @@ tr {
 	text-align:right;
 	color:white;
 	margin-left:50px;
-	margin-bottom: 40px;
+	margin-bottom: 25px;
 	padding-top:50px;
 }
 
@@ -766,7 +1025,7 @@ tr {
 	text-align:right;
 	color:white;
 	margin-left:50px;
-	margin-bottom: 40px;
+	margin-bottom: 25px;
 	-webkit-box-shadow: 0px 0px 0px 1px #595A5A;
 	-moz-box-shadow:  0px 0px 0px 1px #595A5A;
 	box-shadow:  0px 0px 0px 1px #595A5A;	
@@ -815,7 +1074,7 @@ tr {
 	text-align:right;
 	color:white;
 	margin-left:50px;
-	margin-bottom: 40px;
+	margin-bottom: 25px;
 	-webkit-box-shadow: 0px 0px 2px 1px blue;
 	-moz-box-shadow:  0px 0px 2px 1px blue;
 	box-shadow:  0px 0px 2px 1px blue;	
@@ -856,7 +1115,7 @@ tr {
 	float: left;
 	text-align:center;
 	margin-left:-350px;
-	margin-bottom: 40px;
+	margin-bottom: 0px;
 	display:none;
 }
 
@@ -872,7 +1131,7 @@ tr {
 	float: left;
 	text-align:center;
 	margin-left:-350px;
-	margin-bottom: 40px;
+	margin-bottom: 0px;
 	-webkit-box-shadow: 0px 0px 0px 1px black;
 	-moz-box-shadow:  0px 0px 0px 1px black;
 	box-shadow:  0px 0px 0px 1px black;	
@@ -889,11 +1148,11 @@ tr {
 	width:350px;
 	height:70px;
 	clear: none;
-	margin: 20 auto;
+	margin: 10 auto;
 	float: left;
 	text-align:center;
 	margin-left:50px;
-	margin-bottom: 40px;
+	margin-bottom: 0px;
 	-webkit-box-shadow: 0px 0px 0px 1px black;
 	-moz-box-shadow:  0px 0px 0px 1px black;
 	box-shadow:  0px 0px 0px 1px black;	
@@ -914,7 +1173,7 @@ tr {
 	float: left;
 	text-align:center;
 	margin-left:50px;
-	margin-bottom: 40px;
+	margin-bottom: 0px;
 	-webkit-box-shadow: 0px 0px 2px 1px blue;
 	-moz-box-shadow:  0px 0px 2px 1px blue;
 	box-shadow:  0px 0px 2px 1px blue;	
@@ -971,7 +1230,7 @@ tr {
 	width:350px;
 	height:70px;
 	clear: none;
-	margin: auto;
+	margin:auto;
 	float: left;
 	text-align:center;
 	margin-left:-350px;
@@ -987,7 +1246,7 @@ tr {
 	width:350px;
 	height:70px;
 	clear: none;
-	margin: auto;
+	margin:auto;
 	float: left;
 	text-align:center;
 	margin-left:-350px;
@@ -1128,6 +1387,10 @@ tr {
   }
 }
 
+
+/* STYLE MENU USER */
+
+
 .boutonArrive {
  -webkit-animation: boutonArrive 1s linear forwards;
 			-o-animation: boutonArrive 1s linear forwards;
@@ -1138,6 +1401,527 @@ tr {
 }
 	
 	
+
+.dropdown-toggle {
+	width:170px;
+	height:100px;
+
+	position:absolute;
+	top:40px;
+	right:50px;
+	cursor:pointer;
+	
+	
+}
+
+.dropdown-menu {
+	width:170px;
+	height:100px;
+	border:1px solid #E0E0E0;
+	border-radius:5px;
+	background-color:white;
+	position:absolute;
+	top:80px;
+	right:60px;
+	z-index:15;
+	box-shadow: 0.1px 0.1px 4px #D0D0D0;
+	padding-top:15px;
+	text-align:center;
+	
+	
+	
+}
+
+/* BOUTON MENU ANIMÉ */
+
+
+#nav-toggle { position: absolute; left: 50px; top: 50px; }
+
+#nav-toggle { cursor: pointer; padding: 5px 35px 16px 0px; }
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 5px;
+  height: 4px;
+  width: 45px;
+  background: black;
+  position: absolute;
+  display: block;
+  content: '';
+  z-index:15;
+}
+#nav-toggle span:before {
+ top: -13px; 
+}
+#nav-toggle  span:after {
+   bottom: -13px;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  transition: all 300ms ease-in-out;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+
+#nav-toggle.active span:before {
+  transform: translateY(13px) rotate(45deg) ;
+}
+#nav-toggle.active span:after {
+  transform:  translateY(-13px) rotate(-45deg);
+}
+
+
+
+/* Initial menu */
+.menu {
+  left: -285px;  /* start off behind the scenes */
+  height: 100%;
+  position: fixed;
+  width: 285px;
+  background-color:black;
+}
+
+/* Basic styling */
+
+.jumbotron {
+	
+  height: 100px;
+  width:100%;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+		  position:relative;
+}
+
+
+
+.menu ul {
+  border-top: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align:center;
+}
+
+
+.menu li {
+  border-bottom:none;
+  font-family: 'San Francisco', sans-serif;
+  line-height: 45px;
+  padding-bottom: 3px;
+ 
+  padding-top: 3px;
+}
+
+.menu li:hover {
+  border-bottom:none;
+  font-family: 'San Francisco', sans-serif;
+  line-height: 45px;
+  padding-bottom: 3px;
+
+  padding-top: 3px;
+  background-color:grey;
+}
+
+.menu a {
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+
+}
+
+.icon-close {
+  cursor: pointer;
+  padding-left: 10px;
+  padding-top: 50px;
+}
+
+.icon-menu {
+  color: #000000;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  height:75px;
+  width:45px;
+  margin-left:50px;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  z-index:15;
+ 
+}
+
+.icon-menu i {
+  margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bg {
+  background-color: #f2efef;
+  width: 400px;
+  height: 30px;
+  margin: 0 auto;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.html {
+  background: -webkit-linear-gradient(
+    135deg,
+    #009999 25%, #008283 25%,
+		#008283 50%, #009999 50%,
+		#009999 75%, #008283 75%
+  );
+  
+  background: -moz-linear-gradient(
+    135deg,
+    #009999 25%, #008283 25%,
+		#008283 50%, #009999 50%,
+		#009999 75%, #008283 75%
+  );
+  
+  background: -o-linear-gradient(
+    135deg,
+    #009999 25%, #008283 25%,
+		#008283 50%, #009999 50%,
+		#009999 75%, #008283 75%
+  );
+  
+  width: 80%;
+  height: 30px;
+  background-size: 50px 50px;
+  
+  
+  
+  -webkit-animation: bar-animation 3s linear infinite;
+
+}
+
+
+@-webkit-keyframes bar-animation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 50px;
+  }
+}
+
+
+
+
+
+
+.progressBar {
+    width: 100%;
+    height: 38px;
+    border: 1px solid #111;
+	border-radius:4px;
+	padding:5px;
+
+}
+.progressBar div {
+    height: 100%;
+    color: #fff;
+	border-radius:4px;
+	padding-right:10px;
+    text-align: right;
+    line-height: 38px; /* same as #progressBar height if we want text middle aligned */
+    width: 0;
+    background-color: #69B3DD;
+	position:relative;
+	font-family: 'San Francisco';
+}
+
+
+.progressBar div:after {
+	content: "";
+	  position: absolute;
+	  top: 0; left: 0; bottom: 0; right: 0;
+	  background-image: linear-gradient(
+	    -45deg, 
+	    rgba(255, 255, 255, .1) 25%, 
+	    transparent 25%, 
+	    transparent 50%, 
+	    rgba(255, 255, 255, .1) 50%, 
+	    rgba(255, 255, 255, .1) 75%, 
+	    transparent 75%, 
+	    transparent
+	  );
+	  z-index: 1;
+	  background-size: 50px 50px;
+	  animation: move 2s linear infinite;
+	  border-top-right-radius: 8px;
+	  border-bottom-right-radius: 8px;
+	  border-top-left-radius: 8px;
+	  border-bottom-left-radius: 8px;
+	  overflow: hidden;
+}
+
+
+.progressBar2 {
+    width: 202px;
+    height: 38px;
+    border: none;
+	border-radius:4px;
+	padding:5px;
+
+}
+.progressBar2 div {
+    height: 100%;
+    color: #fff;
+	border-radius:4px;
+	padding-right:10px;
+    text-align: right;
+    line-height: 38px; /* same as #progressBar height if we want text middle aligned */
+    width: 0;
+    background-color: #565AE0;
+	position:relative;
+	font-family: 'San Francisco';
+}
+
+
+.progressBar2 div:after {
+	content: "";
+	  position: absolute;
+	  top: 0; left: 0; bottom: 0; right: 0;
+	  background-image: linear-gradient(
+	    -45deg, 
+	    rgba(255, 255, 255, .04) 25%, 
+	    transparent 25%, 
+	    transparent 50%, 
+	    rgba(255, 255, 255, .04) 50%, 
+	    rgba(255, 255, 255, .04) 75%, 
+	    transparent 75%, 
+	    transparent
+	  );
+	  z-index: 1;
+	  background-size: 50px 50px;
+	  animation: move 2s linear infinite;
+	  border-top-right-radius: 8px;
+	  border-bottom-right-radius: 8px;
+	  border-top-left-radius: 8px;
+	  border-bottom-left-radius: 8px;
+	  overflow: hidden;
+}
+
+.fondanime {
+	content: "";
+	  position: absolute;
+	 width:680px; height:150px;
+	  background-image: repeating-linear-gradient(
+	    -45deg, 
+	    #000, #000 .10em,
+		#fff 0, #fff .90em
+	  );
+	  z-index: 1;
+	  background-size: 680px 690px;
+	  animation: move 2s linear infinite;
+	  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+	.meter { 
+		height: 20px;  /* Can be anything */
+		position: relative;
+		margin: 60px 0 20px 0; /* Just for demo spacing */
+		background: #555;
+		-moz-border-radius: 25px;
+		-webkit-border-radius: 25px;
+		border-radius: 25px;
+		padding: 10px;
+		-webkit-box-shadow: inset 0 -1px 1px rgba(255,255,255,0.3);
+		-moz-box-shadow   : inset 0 -1px 1px rgba(255,255,255,0.3);
+		box-shadow        : inset 0 -1px 1px rgba(255,255,255,0.3);
+	}
+	.meter > span {
+		display: block;
+		height: 100%;
+		   -webkit-border-top-right-radius: 8px;
+		-webkit-border-bottom-right-radius: 8px;
+		       -moz-border-radius-topright: 8px;
+		    -moz-border-radius-bottomright: 8px;
+		           border-top-right-radius: 8px;
+		        border-bottom-right-radius: 8px;
+		    -webkit-border-top-left-radius: 20px;
+		 -webkit-border-bottom-left-radius: 20px;
+		        -moz-border-radius-topleft: 20px;
+		     -moz-border-radius-bottomleft: 20px;
+		            border-top-left-radius: 20px;
+		         border-bottom-left-radius: 20px;
+		background-color: rgb(43,194,83);
+		background-image: -webkit-gradient(
+		  linear,
+		  left bottom,
+		  left top,
+		  color-stop(0, rgb(43,194,83)),
+		  color-stop(1, rgb(84,240,84))
+		 );
+		background-image: -moz-linear-gradient(
+		  center bottom,
+		  rgb(43,194,83) 37%,
+		  rgb(84,240,84) 69%
+		 );
+		-webkit-box-shadow: 
+		  inset 0 2px 9px  rgba(255,255,255,0.3),
+		  inset 0 -2px 6px rgba(0,0,0,0.4);
+		-moz-box-shadow: 
+		  inset 0 2px 9px  rgba(255,255,255,0.3),
+		  inset 0 -2px 6px rgba(0,0,0,0.4);
+		box-shadow: 
+		  inset 0 2px 9px  rgba(255,255,255,0.3),
+		  inset 0 -2px 6px rgba(0,0,0,0.4);
+		position: relative;
+		overflow: hidden;
+	}
+	.meter > span:after, .animate > span > span {
+		content: "";
+		position: absolute;
+		top: 0; left: 0; bottom: 0; right: 0;
+		background-image: 
+		   -webkit-gradient(linear, 0 0, 100% 100%, 
+		      color-stop(.25, rgba(255, 255, 255, .2)), 
+		      color-stop(.25, transparent), color-stop(.5, transparent), 
+		      color-stop(.5, rgba(255, 255, 255, .2)), 
+		      color-stop(.75, rgba(255, 255, 255, .2)), 
+		      color-stop(.75, transparent), to(transparent)
+		   );
+		background-image: 
+			-moz-linear-gradient(
+			  -45deg, 
+		      rgba(255, 255, 255, .2) 25%, 
+		      transparent 25%, 
+		      transparent 50%, 
+		      rgba(255, 255, 255, .2) 50%, 
+		      rgba(255, 255, 255, .2) 75%, 
+		      transparent 75%, 
+		      transparent
+		   );
+		z-index: 1;
+		-webkit-background-size: 50px 50px;
+		-moz-background-size: 50px 50px;
+		-webkit-animation: move 2s linear infinite;
+		   -webkit-border-top-right-radius: 8px;
+		-webkit-border-bottom-right-radius: 8px;
+		       -moz-border-radius-topright: 8px;
+		    -moz-border-radius-bottomright: 8px;
+		           border-top-right-radius: 8px;
+		        border-bottom-right-radius: 8px;
+		    -webkit-border-top-left-radius: 20px;
+		 -webkit-border-bottom-left-radius: 20px;
+		        -moz-border-radius-topleft: 20px;
+		     -moz-border-radius-bottomleft: 20px;
+		            border-top-left-radius: 20px;
+		         border-bottom-left-radius: 20px;
+		overflow: hidden;
+	}
+
+	.animate > span:after {
+		display: none;
+	}
+
+	@-webkit-keyframes move {
+	    0% {
+	       background-position: 0 0;
+	    }
+	    100% {
+	       background-position: 50px 50px;
+	    }
+	}
+
+	.orange > span {
+		background-color: #f1a165;
+		background-image: -moz-linear-gradient(top, #f1a165, #f36d0a);
+		background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #f1a165),color-stop(1, #f36d0a));
+		background-image: -webkit-linear-gradient(#f1a165, #f36d0a); 
+	}
+
+	.red > span {
+		background-color: #f0a3a3;
+		background-image: -moz-linear-gradient(top, #f0a3a3, #f42323);
+		background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #f0a3a3),color-stop(1, #f42323));
+		background-image: -webkit-linear-gradient(#f0a3a3, #f42323);
+	}
+
+	.nostripes > span > span, .nostripes > span:after {
+		-webkit-animation: none;
+		background-image: none;
+	}
+
+
+
+
+
+
+
+
+#clockdiv{
+    font-family: 'san Francisco';
+    color: #000000;
+    display: inline-block;
+    font-weight: 200;
+    text-align: center;
+    font-size: 40px;
+}
+
+#clockdiv > div{
+
+    padding: 0px;
+	padding-bottom:0px;
+    border-radius: 3px;
+    background:white;
+    display: inline-block;
+}
+
+#clockdiv div > span{
+
+	padding: 0px;
+	padding-bottom:0px;
+    border-radius: 3px;
+    background: white;
+    display: inline-block;
+}
+
+.smalltext{
+    padding-top: 0px;
+    font-size: 16px;
+}
+
+
+
+
+
 
 
 
@@ -1219,8 +2003,8 @@ tr {
 
 	#materiautexteblanc {
 		position:absolute;
-		left:159px;
-		top:274px;
+		left:129px;
+		top:224px;
 		background-color:none;
 		width:150px;
 		height:30px;
@@ -1232,8 +2016,8 @@ tr {
 	
 	#materiautexterouge{
 		position:absolute;
-		left:159px;
-		top:274px;
+		left:129px;
+		top:224px;
 		background-color:none;
 		width:150px;
 		height:30px;
@@ -1244,8 +2028,8 @@ tr {
 	
 	#materiautextenoir{
 		position:absolute;
-		left:159px;
-		top:274px;
+		left:129px;
+		top:224px;
 		background-color:none;
 		width:150px;
 		height:30px;
@@ -1257,8 +2041,8 @@ tr {
 
 	#materiautexteargent{
 		position:absolute;
-		left:159px;
-		top:274px;
+		left:129px;
+		top:224px;
 		background-color:none;
 		width:150px;
 		height:30px;
@@ -1270,8 +2054,8 @@ tr {
 	
 	#materiautexteor14{
 		position:absolute;
-		left:159px;
-		top:274px;
+		left:129px;
+		top:224px;
 		background-color:none;
 		width:150px;
 		height:30px;
@@ -1283,8 +2067,21 @@ tr {
 	
 	#materiautexteor18{
 		position:absolute;
-		left:159px;
-		top:274px;
+		left:129px;
+		top:224px;
+		background-color:none;
+		width:150px;
+		height:30px;
+		text-align: left;
+		font-family: 'San-francisco';
+		
+	}
+	
+	
+	#choisirmateriau{
+		position:absolute;
+		left:129px;
+		top:224px;
 		background-color:none;
 		width:150px;
 		height:30px;
@@ -1296,8 +2093,8 @@ tr {
 
 	#qualitebrut{
 		position:absolute;
-		left:132px;
-		top:345px;
+		left:115px;
+		top:285px;
 		background-color:none;
 		width:150px;
 		height:30px;
@@ -1309,8 +2106,8 @@ tr {
 	
 	#qualitefini{
 		position:absolute;
-		left:132px;
-		top:345px;
+		left:115px;
+		top:285px;
 		background-color:none;
 		width:150px;
 		height:30px;
@@ -1322,8 +2119,21 @@ tr {
 	
 	#qualitesublime{
 		position:absolute;
-		left:132px;
-		top:345px;
+		left:115px;
+		top:285px;
+		background-color:none;
+		width:150px;
+		height:30px;
+		text-align: left;
+		font-family: 'San-francisco';
+		
+	}
+	
+	
+	#choisirqualite{
+		position:absolute;
+		left:115px;
+		top:285px;
 		background-color:none;
 		width:150px;
 		height:30px;
@@ -1335,8 +2145,8 @@ tr {
 	
 	#livraison96h{
 		position:absolute;
-		left:152px;
-		top:416px;
+		left:132px;
+		top:346px;
 		background-color:none;
 		width:150px;
 		height:30px;
@@ -1348,8 +2158,8 @@ tr {
 	
 	#livraison48h{
 		position:absolute;
-		left:152px;
-		top:416px;
+		left:132px;
+		top:346px;
 		background-color:none;
 		width:150px;
 		height:30px;
@@ -1360,8 +2170,21 @@ tr {
 
 	#livraison24h{
 		position:absolute;
-		left:152px;
-		top:416px;
+		left:132px;
+		top:346px;
+		background-color:none;
+		width:150px;
+		height:30px;
+		text-align: left;
+		font-family: 'San-francisco';
+		
+	}
+	
+	
+	#choisirlivraison{
+		position:absolute;
+		left:132px;
+		top:346px;
 		background-color:none;
 		width:150px;
 		height:30px;
@@ -1477,6 +2300,58 @@ tr {
 	position: relative;
 	-webkit-font-smoothing: antialiased;
 }
+
+
+
+.btnbas {
+	border: none;
+	font-family: "san francisco";
+	font-size: 20px;
+	font-weight: 300;
+	
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 10px 55px;
+	text-align: center;
+	display: inline-block;
+
+	margin: 15px 30px;
+	letter-spacing: 5px;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btnbas:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+/* Pseudo elements for icons */
+.btnbas:before,
+.icon-heart:after,
+.icon-star:after,
+.icon-plus:after,
+.icon-file:before {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+}
+
+
 
 .icon-envelope:before {
 	content: "\e000";
@@ -1709,7 +2584,7 @@ tr {
 .btn-2 {
 	background: #565AE0;
 	color: #fff;
-	box-shadow: 0 6px #848AE0;
+	box-shadow: 0 6px #565AE0;
 	-webkit-transition: none;
 	-moz-transition: none;
 	transition: none;
@@ -1751,14 +2626,99 @@ tr {
 }
 
 .btn-2c:hover {
-	box-shadow: 0 4px #848AE0;
+	box-shadow: 0 4px #565AE0;
 	top: 2px;
 }
 
 .btn-2c:active {
-	box-shadow: 0 0 #848AE0;
+	box-shadow: 0 0 #565AE0;
 	top: 6px;
 }
+
+
+
+
+
+.btnprint {
+	border: none;
+	font-family: "san francisco";
+	font-size: 17px;
+	font-weight: normal;
+	
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	padding: 17px 40px;
+	text-align: center;
+	display: inline-block;
+	margin: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.btnprint:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+/* Pseudo elements for icons */
+.btnprint:before,
+.icon-heart:after,
+.icon-star:after,
+.icon-plus:after,
+.icon-file:before {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+
+
+/* Button 2print */
+
+
+.btn-2print {
+	background: #565AE0;
+	color: #fff;
+	box-shadow: 0 6px #565AE0;
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none;
+}
+
+
+/* Button 2cprint */
+.btn-2cprint {
+	border-radius: 5px;
+}
+
+.btn-2cprint:hover {
+	box-shadow: 0 4px #565AE0;
+	top: 2px;
+}
+
+.btn-2cprint:active {
+	box-shadow: 0 0 #565AE0;
+	top: 6px;
+}
+
+
 
 /* Button 2d */
 .btn-2d {
@@ -3295,3 +4255,128 @@ tr {
   font-weight: bold;
   src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff2");
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* menu descendant */
+
+
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+n
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+.navigation {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  background-color: #fff;
+}
+.navigation ul {
+  list-style: none;
+  padding: 0; 
+}
+.navigation a {
+  text-decoration: none;
+  color: #434A54;
+  font-weight: 500;
+}
+.navigation .has-submenu {
+  position: relative;
+}
+.navigation .has-submenu ul li {
+  opacity: 0;
+}
+.navigation .has-submenu > a:after {
+  content: "\f123";
+  font-family: "Ionicons";
+  margin-left: 4px;
+  color: #CCD1D9;
+}
+.navigation ul ul {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #AAB2BD;
+  width: 150px;
+  overflow: hidden;
+  box-shadow: 3px 3px 0 0 rgba(0,0,0,0.1);
+  margin-top: 10px;
+}
+.navigation .has-submenu ul li a {
+  padding: 8px 12px;
+  display: block;
+} 
+.navigation .has-submenu ul li a:hover {
+  background-color: #fafafa;
+}
+.navigation > ul > li {
+  float: left;
+  display: inline-block;
+  margin-right: 15px;
+}
+.inner-content {
+  padding: 10px 20px;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 500;
+  color: #6c6f73;
+}
+.inner-content figure {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 20px;
+}
+.inner-content img {
+  border: 5px solid #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

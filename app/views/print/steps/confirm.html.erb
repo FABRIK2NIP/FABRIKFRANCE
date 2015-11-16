@@ -7,11 +7,11 @@
 	      }
 	      #map {
 			position:absolute;
-			left:-10%;
+			left:0%;
 			top:10%;
 			
 	        height: 2200px;
-			width:120%;
+			width:100%;
 			margin:0 auto;
 			margin-top:-1100px;
 		
@@ -69,29 +69,26 @@
 
 
 	
-	 <div id="floating-panel" style="left:none; padding:20px;">
-		 <div style=" padding:20px; border-radius:8px;width:334px; height:485px;">
+	 <div id="floating-panel" style="left:none; padding:20px;background-color:white;">
+		 <div style=" padding:20px; border-radius:8px;width:334px; height:485px;background-color:white;">
 			   <div style="margin: 0 auto; width: 42%; margin-top: 0px; text-align: center; max-width:160px;">
 			   <%= image_tag("logotruck.svg", :alt => "images") %>
 		   	   </div>
 		  <h1  style="font-size:29px; letter-spacing: 1px; margin-top:0px; margin-bottom:10px;">Adresse de livraison</h1>
 		  <br style="height:30px;">
 		  <div style="margin: 0 auto; width:274px">
-	 	  <%= f.text_field :address, :onclick => "this.value=''", :value => 'Adresse', :class => 'champtexte', :id => 'address'%>
-		  <%= f.text_field :town, :onclick => "this.value=''", :value => 'Ville', :class => 'champtexte2', :id => 'town'%>
+	 	  <%= f.text_field :address, :onclick => "this.value=''", :placeholder => 'Adresse', :value => 'Adresse', :class => 'champtexte', :id => 'address'%>
+		  <%= f.text_field :town, :onclick => "this.value=''", :placeholder => 'Ville', :value => 'Ville', :class => 'champtexte2', :id => 'town'%>
 		
-		  <%= f.text_field :departement, :onclick => "this.value=''", :value => 'Département', :class => 'champtexte3', :id => 'departement'%>
-		  <%= f.text_field :zipcode, :onclick => "this.value=''", :value => 'ZIP code', :class => 'champtexte4', :id => 'zipcode'%>
+		  <%= f.text_field :departement, :onclick => "this.value=''", :placeholder => 'Département', :value => 'Département', :class => 'champtexte3', :id => 'departement'%>
+		  <%= f.text_field :zipcode, :onclick => "this.value=''", :placeholder => 'Zip code', :value => 'ZIP code', :class => 'champtexte4', :id => 'zipcode'%>
 	  
-		  <%= f.text_field :pays, :onclick => "this.value=''", :value => 'Pays', :class => 'champtexte5', :id => 'pays'%>
-	     </div>	  
-	  		<br>
-	
-	  	  <br>
-		  <div style="position:absolute; left:50%; margin-left:-130px; top:80%; margin-top:-30px;">
-		  <%= f.submit 'Suite', :class => 'btn btn-2 btn-2c' %>
-	  </div>
-		  <input class="btn btn-2 btn-2c" style="margin-top:30px;" id="submit" type="button" onClick = "this.style.visibility= 'hidden';" value="Actualiser">
+		  <%= f.text_field :pays, :onclick => "this.value=''", :placeholder => 'Pays', :value => 'Pays', :class => 'champtexte5', :id => 'pays', :style => 'margin-bottom:0px;'%>
+		
+	     </div>	   
+		  <%= f.submit 'Suite', :class => 'btn btn-2 btn-2c', :style => 'padding: 15px 25px;margin-top:40px;' %>
+	 
+		  <div onClick = "this.style.visibility= 'hidden';" style="margin-top:-90px;position:relative;"><input class="btn btn-2 btn-2c" id="submit" type="button"  value="Actualiser"></div>
 		   
 
 	      <div>
@@ -102,7 +99,7 @@
 	    </div>
 	    <div id="map"></div>
 	  
-	  
+	    <div style="visibility:hidden"> <%= f.text_field :useridentifiant, :value =>session[:user_id], :class => 'champtexte5', :id => 'pays'%></div>
 	  
 	    </fieldset>
 	  

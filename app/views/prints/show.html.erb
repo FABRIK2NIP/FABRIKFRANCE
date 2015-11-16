@@ -1,0 +1,127 @@
+<div class="login">
+  <div class="container">
+    <div class="form" style="position: relative; text-align:center; margin: 0 auto; width:450px; margin-top:30px;">	
+			<div style="text-align: left; padding-top:0px;">
+				<h2 style="font-size:30px; font-weight:200; letter-spacing:0.5px;margin-bottom:0px;margin-top:10px;">Impression</h2>
+				<div style=style="font-size:18px; font-weight:200; letter-spacing:3px;margin-top:30px; color:#ACAEAE;margin-left:320px;position:absolute; width:150px; height:60px; background-color:red;right:-3px; top:0px;margin-top:3px;"></div>
+				
+				
+				<div id="clockdiv" style="margin-left:320px;position:absolute;margin-top:-50px;border:1px solid black; border-radius:5px;padding:10px;width:150px;">
+				  <div style="visibility:hidden; display:none">
+				    <span class="days"></span>
+				    <div class="smalltext">Days</div>
+				  </div>
+				  <div  style="visibility:hidden;display:none;">
+				    <span class="hours"></span>
+				    <div class="smalltext">Hours</div>
+				  </div>
+				  <div>
+				    <span class="minutes"></span>
+				    <div class="smalltext">Minutes</div>
+				  </div>
+				  <div>
+				    <span class="seconds"></span>
+				    <div class="smalltext">Seconds</div>
+				  </div>
+				</div>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				<h2 style="font-size:25px; font-weight:200; letter-spacing:0.5px; color:#ACAEAE;margin-top:-5px;">  <%=File.basename(@print.attachment.path)%></h2>
+				
+				<div style="text-align:center; margin: 0 auto; width:100%;margin-top:0px;margin-top:-50px;">
+					<div class="holder3" style="margin-top:80px">
+						<div class="bar3"></div>
+						<div style="height:300px;">
+						<iframe id="vs_iframe" src="http://www.viewstl.com/?embeded&noborder=yes" style="border:0;margin:0;width:100%;height:100%;z-index:1"></iframe>
+						</div>
+					</div>
+			</div>
+		
+			
+			
+				
+					<%= javascript_tag do %>
+
+					document.getElementById("vs_iframe").onload=function()
+					{	
+					document.getElementById("vs_iframe").contentWindow.postMessage({msg_type:'load', url:'https://www.dropbox.com/s/cq2hp9ghtuxfchx/40mmcube.stl?dl=1'}, '*');
+					document.getElementById("vs_iframe").contentWindow.postMessage('info', '*');
+
+					window.onmessage = function(e)
+					{
+						if (e.origin=="http://www.viewstl.com")
+						{
+							
+							var namename=("Model filename: "+e.data.filename);
+							var volumevolume=("Volume: "+e.data.volume);
+							var xx=("x: "+e.data.x);
+							var yy=("y: "+e.data.y);
+							var zz=("z: "+e.data.z);
+							document.getElementById("mb_ad1").innerHTML = namename ;
+							document.getElementById("mb_ad2").innerHTML = volumevolume ;
+							document.getElementById("mb_ad3").innerHTML = xx ;
+							document.getElementById("mb_ad4").innerHTML = yy ;
+							document.getElementById("mb_ad5").innerHTML = zz ;
+						}
+					};
+				}
+					<% end %>
+					
+					
+				
+				<div style="margin-left:-20px; border-radius:10px;width:100%; padding-top:18px; padding-left:20px; padding-bottom:2px;">
+				<h2 style="font-size:22px; font-weight:200; letter-spacing:0.5px;margin-bottom:0px;display:inline;">Etat</h2>
+				<br>
+				<br>
+				<div class="progressBar"><div></div></div>
+				<br>
+				
+				
+				
+				
+				
+				
+				<h2 style="font-size:17px; font-weight:200; letter-spacing:0.5px;margin-top:3px; color:#ACAEAE;">En cours d'impression</h2>
+				
+			    </div>
+				<br>
+				<h2 style="font-size:20px; font-weight:200; letter-spacing:0.5px;margin-bottom:0px;margin-top7px;">Materiau</h2>
+				<h2 style="font-size:17px; font-weight:200; letter-spacing:0.5px;margin-top:2px; color:#ACAEAE;"><%= @print.materiau%></h2>
+				<br>
+				<h2 style="font-size:20px; font-weight:200; letter-spacing:0.5px;margin-bottom:0px;">Qualité</h2>
+				<h2 style="font-size:17px; font-weight:200; letter-spacing:0.5px;margin-top:2px; color:#ACAEAE;"><%= @print.qualite%></h2>
+				<br>
+				<h2 style="font-size:20px; font-weight:200; letter-spacing:0.5px;margin-bottom:0px;">Livraison</h2>
+				<h2 style="font-size:17px; font-weight:200; letter-spacing:0.5px;margin-top:2px; color:#ACAEAE;"><%= @print.livraison%></h2>
+				<br>
+				<h2 style="font-size:20px; font-weight:200; letter-spacing:0.5px;margin-bottom:0px;">Propriétaire</h2>
+				<h2 style="font-size:17px; font-weight:200; letter-spacing:0.5px;margin-top:2px; color:#ACAEAE;"><%= @user.last_name %> <%= @user.first_name %></h2>
+				
+				<br>
+				<h2 style="font-size:20px; font-weight:200; letter-spacing:0.5px;margin-bottom:10px;margin-top:0px;">Adresse de livraison</h2>
+				
+	            <h2 style="font-size:17px; font-weight:200; letter-spacing:0.5px;margin-top:2px; color:#ACAEAE;margin-bottom:15px;"><%= @print.address %></h2>
+				<div>
+					<h2 style="font-size:17px; font-weight:200; letter-spacing:0.5px;margin-top:2px; color:#ACAEAE;display:inline;"><%= @print.zipcode %></h2>
+					<h2 style="font-size:17px; font-weight:200; letter-spacing:0.5px;margin-top:2px; color:#ACAEAE;display:inline;margin-left:10px;">|</h2>
+					<h2 style="font-size:17px; font-weight:200; letter-spacing:0.5px;margin-top:2px; color:#ACAEAE;display:inline;margin-left:10px;"><%= @print.town %></h2>
+				</div>
+				<h2 style="font-size:17px; font-weight:200; letter-spacing:0.5px;margin-top:15px; color:#ACAEAE;"><%= @print.pays %></h2>
+			</div>
+		
+  
+    </div>
+  </div>
+</div>
+
+

@@ -1,0 +1,78 @@
+<%= form_tag charges_path do %>
+  <article>
+    <% if flash[:error].present? %>
+      <div id="error_explanation">
+        <p><%= flash[:error] %></p>
+      </div>
+    <% end %>
+    <label class="amount">
+      <span>Prix : <%= @print.name%>,99 €</span>
+    </label>
+  </article>
+
+  <script src="https://checkout.stripe.com/checkout.js"></script>
+
+  <button id="customButton" class="btnbas btn-2 btn-2c">Purchase</button>
+
+  <%= javascript_tag do %>
+    var handler = StripeCheckout.configure({
+      key: 'pk_test_msnYHle51XAqqvu3xDHBaioL',
+      image: '/img/documentation/checkout/marketplace.png',
+      locale: 'auto',
+      token: function(token) {
+        // Use the token to create the charge with a server-side script.
+        // You can access the token ID with `token.id`
+      }
+    });
+
+    $('#customButton').on('click', function(e) {
+      // Open Checkout with further options
+      handler.open({
+        name: 'fabrik.company',
+        description: 'Impression ',
+        currency: "eur",
+        amount: <%= @print.name %>99
+      });
+      e.preventDefault();
+    });
+
+    // Close Checkout on page navigation
+    $(window).on('popstate', function() {
+      handler.close();
+    });
+	
+	token: function(response) {
+	  var tokenInput = $("<input type=hidden name=stripeToken />").val(response.id);
+	  var emailInput = $("<input type=hidden name=stripeEmail />").val(response.email);
+	  $("form").append(tokenInput).append(emailInput).submit();
+	}
+	
+	
+  <% end %>
+	
+
+
+
+<%= form_tag charges_path do %>
+  <article>
+    <% if flash[:error].present? %>
+      <div id="error_explanation">
+        <p><%= flash[:error] %></p>
+      </div>
+    <% end %>
+    <label class="amount">
+      <span>Prix : <%= @print.name%>,99 €</span>
+    </label>
+  </article>
+
+  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+          data-description="A month's subscription"
+          data-amount="<%= @print.name%>99"
+          data-locale="auto"></script>
+<% end %>	
+	
+
+<% end %>
+
+
