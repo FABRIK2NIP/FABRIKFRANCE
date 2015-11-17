@@ -34,6 +34,16 @@ $(document).ready(function(){
 
 
 
+$element = document.getElementById("headhead")
+$element.velocity(
+  { 
+    opacity: 1, 
+    top: "50%" 
+  },
+  { 
+    display: "block" 
+  }
+);
 
 
 
