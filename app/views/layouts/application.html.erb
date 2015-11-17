@@ -4,6 +4,10 @@
   <title>Upload</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "app" => true %>
+	  <%= javascript_include_tag "application", "animsition.min" => true %>
+	    <%= javascript_include_tag "application", "countdown" => true %>
+		  <%= javascript_include_tag "application", "script" => true %>
   <%= csrf_meta_tags %>
  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript">
@@ -15,12 +19,6 @@
   </script>
 <script src="//cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/VelocityJS/1.2.2/VelocityJS.ui.js"></script>
-<script type="text/javascript" src="app.js"></script>
-
-<script type="text/javascript" src="countdown.js"></script>
-
-<script type="text/javascript" src="script.js"></script>
-
 
 <link rel="stylesheet" href="animsition.min.css">
 
@@ -124,14 +122,6 @@
 <%= yield %>
 
 
-
-<script type="text/javascript" src="app.js"></script>
-
-<script type="text/javascript" src="countdown.js"></script>
-
-<script type="text/javascript" src="script.js"></script>
-
-<script src="animsition.min.js"></script>
 
 </body>
 </html>
