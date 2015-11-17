@@ -7,9 +7,7 @@ require 'rails/all'
 Bundler.require(*Rails.groups)
 
 
-config.action_dispatch.default_headers = {
-  'X-Frame-Options' => 'ALLOWALL'
-}
+
 
 module PrintThing
   class Application < Rails::Application
