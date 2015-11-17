@@ -1,5 +1,5 @@
 <script src="jquery.viewportchecker.min.js"></script>
-<div class="headerhome" style="max-width:960px; width:90%; margin:0 auto;background-color:red;min-width:700px;"  >
+<div class="headerhome" style="max-width:960px; width:90%; margin:0 auto;background-color:red;min-width:700px;position:absolute; z-index:50;left:50%; margin-left:-480px"  >
 	<h1 style="float:left; margin-right:80px;color:white;font-family:'San Francisco'; 	font-weight:200;font-size:25px;letter-spacing:8px;margin-top:-80px;margin-left:0px;">FABRIK</h1>
 	<h1 style="float:left; margin-right:80px;color:#B0B2B2;font-family:'San Francisco'; 	font-weight:200;font-size:14px;letter-spacing:0.5px;margin-top:-74px;margin-left:150px;">Features</h1>
 	<h1 style="float:left; margin-right:80px;color:#B0B2B2;font-family:'San Francisco'; 	font-weight:200;font-size:14px;letter-spacing:0.5px;margin-top:-74px;margin-left:230px;">Pricing</h1>
@@ -11,16 +11,22 @@
 
 </div>
 
-<div class="Firstsight" style="width:100%; height:100%; background-color:black; margin-top:0px;position:relative;">
+<div class="Firstsight" style="width:100%; height:100%; background-color:black; margin-top:0px;position:absolute;top:0px;"></div>
 	<div class="firstsightcontent" style="height:100%; margin-top:0px;max-width:960px; width:90%; margin: 0 auto; 	min-width:700px;position:relative;"> 
-		<h1 style=" margin-left:80px;color:white;font-family:'San Francisco'; 		font-weight:200;font-size:30px;letter-spacing:2px;margin-top:0px;">3D printing 20 times cheapper.</h2>
-		<h1 style=" margin-left:80px;color:#B0B2B2;font-family:'San Francisco'; 		font-weight:200;font-size:30px;letter-spacing:2px;margin-top:10px;">Now in 4K resolution.</h1>	
-		<div style="width:450px;margin:80 auto;float:right;"><%= image_tag("progression.svg", :alt => "images") %></div>
+		<div style="margin-top:80px;position:absolute; left:0px; top:150px;">
+			<h1 style=" margin-left:0px;color:white;font-family:'San Francisco'; 			font-weight:200;font-size:30px;letter-spacing:2px;margin-top:0px;">3D printing 20 times cheapper.</h2>
+			<h1 style=" margin-left:0px;color:#B0B2B2;font-family:'San Francisco'; 			font-weight:200;font-size:30px;letter-spacing:2px;margin-top:10px;">Now in 4K resolution.</h1>
+			
+			<button class="btnbas btn-2 btn-2c" style="letter-spacing:1px;text-transform:none;padding:10px 15px 8px;font-weight:300;box-shadow: 0 6px #565AE0;font-size:16px;margin-left:0px; margin-top:30px;font-weight:200;">Try now</button>
+			<button class="btnbas btn-2 btn-2c" style="letter-spacing:1px;text-transform:none;padding:10px 15px 12px;font-weight:300;box-shadow: none; background-color:black; border:1px solid white;font-size:16px;margin-left:-10px;font-weight:100; margin-top:30px;">Learn more</button>
+			
+		</div>	
+		<div style="width:450px;margin:80 auto;float:right;display:inline;margin-top:40px;"><%= image_tag("progression.svg", :alt => "images") %></div>
 	</div>
-</div>
 
 
-<div class="Comparatif" style="width:100%; height:100%; background-color:red;">
+
+<div class="Comparatif" style="width:100%; height:100%; background-color:red;margin-top:300px;">
 
 
 
