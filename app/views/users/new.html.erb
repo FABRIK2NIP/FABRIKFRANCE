@@ -1,1 +1,48 @@
-￿
+<div style="width:100%; height:110px;position:fixed; top:0px;left:0px; z-index:30;background-color:white;"></div>
+
+
+<div class="login">
+  <div class="container">
+    <div class="form">
+
+
+		<div style="position:absolute; left:50%;  margin-left:-135px;top:50%; margin-top:-30px; width:273px; height:600px;text-align:center;z-index:80; ">
+			
+			<div style="width:70px; height:70px; margin:0 auto;margin-left:75px;"><%= image_tag("couronnewelcome2.svg", :alt => "images") %></div>
+			      <h1 style="font-size:50px;letter-spacing:2px;font-weight:100;font-size:40px;margin-top:40px;">SIGN UP</h1>
+				  <p style="color:grey; font-size:16px;letter-spacing:0px;font-weight:200;margin:0 auto;margin-top:8px;margin-bottom:30px;">Créer un compte gratuit.</p>
+			<br>
+
+    		<%= form_for(@user) do |f| %>
+      	    <%= f.text_field :first_name, :placeholder => "First name", :class => 'champtexte' %>
+   	   	    <%= f.text_field :last_name, :placeholder => "Last name", :class => 'champtexte2' %>
+    	    <%= f.email_field :email, :placeholder => "Email", :class => 'champtexte2' %>
+     	    <%= f.password_field :password, :placeholder => "Password", :class => 'champtexte5' %>
+     	    <div style="margin-left:-5px;"><%= f.submit "Démarrer", class: "btnbas btn-2 btn-2c", style: 'letter-spacing:1px;' %></div>
+    		<% end %>
+	</div>
+
+  
+    </div>
+  </div>
+</div>
+
+
+
+<div class="bottomnew" style="height:40px;">
+	<div style="margin: 0 auto;width:780px;">
+		<p style="color:black; font-size:15px;letter-spacing:2px;font-weight:200;float:left; position:inline; margin-top:8px; margin-left:0px;">FABRIK</p> 
+		<p style="color:black; font-size:12px;letter-spacing:0px;font-weight:200;float:left; position:inline; margin-left:8px;margin-top:8px;">-</p>
+		<p style="color:black; font-size:12px;letter-spacing:0px;font-weight:200;float:left; position:inline; margin-left:8px;margin-top:8px;">Conditions générales</p>
+		<p style="color:black; font-size:12px;letter-spacing:0px;font-weight:200;float:left; position:inline; margin-left:8px;margin-top:8px;">-</p>
+		<p style="color:black; font-size:12px;letter-spacing:0px;font-weight:200;float:left; position:inline; margin-left:8px;margin-top:8px;">Politique de confidentialité</p>
+		<p style="color:black; font-size:12px;letter-spacing:0px;font-weight:200;float:left; position:inline; margin-left:8px;margin-top:8px;">-</p>
+		<p style="color:black; font-size:12px;letter-spacing:0px;font-weight:200;float:left; position:inline; margin-left:8px;margin-top:8px;">Politique relative au contenu</p>
+		<p style="color:black; font-size:12px;letter-spacing:0px;font-weight:200;float:left; position:inline; margin-left:8px;margin-top:8px;">-</p>
+		
+			<p style="color:black; font-size:12px;letter-spacing:0px;font-weight:200;float:left; position:inline; margin-left:8px;margin-top:8px;">Copyright © 2015 Fabrik</p>
+			<p style="color:black; font-size:12px;letter-spacing:0px;font-weight:200;float:left; position:inline; margin-left:8px;margin-top:8px;">-</p>
+			<p style="color:black; font-size:12px;letter-spacing:0px;font-weight:200;float:left; position:inline; margin-left:8px;margin-top:8px;">Tous droits réservés</p>
+	</div>
+			
+	</div>
