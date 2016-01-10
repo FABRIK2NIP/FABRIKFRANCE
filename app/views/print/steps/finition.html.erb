@@ -91,7 +91,7 @@
 		
 							document.getElementById("vs_iframe").onload=function()
 							{	
-							document.getElementById("vs_iframe").contentWindow.postMessage({msg_type:'load', url:'https://www.dropbox.com/s/cq2hp9ghtuxfchx/40mmcube.stl?dl=1'}, '*');
+							document.getElementById("vs_iframe").contentWindow.postMessage({msg_type:'load', url:<%= URI(request.url) + @print.attachment_url  %>}, '*');
 							document.getElementById("vs_iframe").contentWindow.postMessage('info', '*');
 		
 							window.onmessage = function(e)
@@ -929,5 +929,7 @@
 						<div id="mb_ad3" style="display:none;"></div> 
 						<div id="mb_ad4" style="display:none;"></div>
 						<div id="mb_ad5" style="display:none;"></div>
+
+
 
 

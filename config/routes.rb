@@ -16,7 +16,7 @@ PrintThing::Application.routes.draw do
   get 'edit/:id' => 'users#edit'
   
   
-  resources :prints
+ 
   resources :home_page
 
 

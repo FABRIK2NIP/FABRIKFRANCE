@@ -15,7 +15,7 @@ class PrintsController < ApplicationController
   # GET /prints/1
   # GET /prints/1.json
   def show
-  @print  = Print.find(params[:id])
+  @print = Print.find(params[:id])
   @user = User.find(current_user)
   end
 
@@ -31,8 +31,7 @@ class PrintsController < ApplicationController
     @print.save(validate: false)
     redirect_to print_step_path(@print, Print.form_steps.first)
     
-      params[:id] = @print.id
-
+    
   end
 
   # DELETE /prints/1
