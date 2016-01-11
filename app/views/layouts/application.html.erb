@@ -48,6 +48,7 @@
 
 
 
+
  
 
  
@@ -137,9 +138,25 @@ document.querySelector( "#nav-toggle" )
       
     	 </div>
 	
+	<script>
+	 var btn = $("#tweenBtn"),
+	    toggle = $(".legend-child"),
+	    isOpen = true;
+	//record the height of the elment in its open state
+	toggle.data("height", toggle.height());
+	console.log($(this).data("height"));
+
+	btn.click(function(){
+	  if (isOpen==false) {
+	    TweenMax.to($(toggle), 1, {height:$(toggle).data("height")})
+	    isOpen=true
+	    }else{
+	      TweenMax.to($(toggle), 1, {height:10});
+	      isOpen=false
+	    }
+	})
 	
-	
-	
+	</script>
 	
 </div>
 
