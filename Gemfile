@@ -24,6 +24,7 @@ gem 'turbolinks_transitions'
 gem 'stripe'
 gem 'haml'
 gem 'bcrypt', '~> 3.1.7'
+gem 'greensock-rails', '~> 1.18', '>= 1.18.0.1'
 
 group :development, :test do
   gem 'sqlite3'
